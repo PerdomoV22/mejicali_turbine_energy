@@ -14,24 +14,18 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item dropdown">
-                            <Link className="nav-link" aria-current="page" to="/about">Sobre Nosotros</Link>
+                            <Link className="nav-link" aria-current="page" to="/">Sobre Nosotros</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <Link className="nav-link dropdown-toggle" to="/services" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Servicios
-                            </Link>
-                            <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a className="dropdown-item" href="#">Action</a></li>
-                                <li><a className="dropdown-item" href="#">Another action</a></li>
-                                <li><a className="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <Link className="nav-link" aria-current="page" to="/servicios">Sobre Nosotros</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <Link className="nav-link dropdown-toggle" to="/projects" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link className="nav-link dropdown-toggle" to="/proyectos" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Projectos
                             </Link>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a className="dropdown-item" href="#">Action</a></li>
+                                <Link className="nav-link" aria-current="page" to="/proyectos">Proyecto1</Link>
+                                <Link className="nav-link" aria-current="page" to="/proyectos/proyecto2">Proyecto2</Link>
                                 <li><a className="dropdown-item" href="#">Another action</a></li>
                                 <li><a className="dropdown-item" href="#">Something else here</a></li>
                             </ul>
