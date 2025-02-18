@@ -1,0 +1,26 @@
+.custom-navbar {
+    position: absolute !important;
+    width: 95%;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+    background: transparent;
+    transition: background 0.3s ease-in-out;
+    background-color: white !important;
+    --bs-bg-opacity: 1 !important;
+    margin: 20px 40px !important;
+    padding: 0 !important;
+    border-radius: 20px;
+
+    .navbar-brand, .nav-link {
+        color: black !important;
+    }
+}
+
+.container-fluid, .navbar-collapse {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+

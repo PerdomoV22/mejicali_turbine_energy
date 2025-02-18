@@ -8,7 +8,7 @@ export const DefaultLayout = () => {
       <header>
         <Navbar />
       </header>
-      <div className="container">
+      <div className="container-layaout">
         <Routes>
           {routes.map((route, idx) => {
             return (
@@ -25,6 +25,7 @@ export const DefaultLayout = () => {
           })}
         </Routes>
       </div>
+      <footer></footer>
     </>
   );
 };
