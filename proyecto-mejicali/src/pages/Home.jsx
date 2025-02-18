@@ -6,6 +6,7 @@ export const Home = () => {
             <header>
                 <Navbar />
             </header>
+            
         </>
     );
 };

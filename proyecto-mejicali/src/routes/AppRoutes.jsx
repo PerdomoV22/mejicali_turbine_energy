@@ -7,7 +7,6 @@ import { Servicios } from "../pages/Servicios";
 
 export const AppRoutes = () => {
     return (
-        
         <Routes>
             <Route path="*" element={<Home />} />
             <Route path="/about" element={<About />} />

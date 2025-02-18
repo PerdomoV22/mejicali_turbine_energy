@@ -1,4 +1,4 @@
-import logo from '../../assets/images/react.svg';
+import logo from '/src/assets/images/react.svg';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
