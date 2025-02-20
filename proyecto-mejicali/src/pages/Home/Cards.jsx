@@ -14,7 +14,7 @@ const Cards = () => {
                             <h5 className="card-title">NUESTRA EMPRESA</h5>
                             <hr />
                             <p className="card-text flex-grow-1">Comprometidos con la excelencia en construcción, ofrecemos soluciones innovadoras y de calidad.</p>
-                            <Button text="Conoce más" to="/servicios" />
+                            <Button text="Conoce más" to="/about" />
                         </JackInTheBox>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ const Cards = () => {
                             <h5 className="card-title">NUESTROS SERVICIOS</h5>
                             <hr />
                             <p className="card-text flex-grow-1">Desde planificación hasta ejecución, brindamos servicios de construcción y mantenimiento con los más altos estándares.</p>
-                            <Button text="Conoce más" to="/servicios" />
+                            <Button text="Conoce más" to="/about" />
                         </JackInTheBox>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ const Cards = () => {
                             <h5 className="card-title">COMPROMISO</h5>
                             <hr />
                             <p className="card-text flex-grow-1">Nos dedicamos a la satisfacción de nuestros clientes con un enfoque basado en confianza, calidad y cumplimiento. </p>
-                            <Button text="Conoce más" to="/servicios" />
+                            <Button text="Conoce más" to="/about" />
                         </JackInTheBox>    
                     </div>
                 </div>

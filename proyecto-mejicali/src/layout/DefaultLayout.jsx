@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../components/shared/Navbar";
 import routes from "../routes/PageRoute";
+import Footer from "../components/shared/footer";
 
 export const DefaultLayout = () => {
   return (
@@ -25,7 +26,9 @@ export const DefaultLayout = () => {
           })}
         </Routes>
       </div>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

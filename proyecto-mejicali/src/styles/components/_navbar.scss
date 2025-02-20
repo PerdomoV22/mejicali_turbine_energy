@@ -6,19 +6,21 @@
     z-index: 10; 
     background: transparent;
     transition: background 0.3s ease-in-out;
-    background-color: white !important;
+    background-color: rgb(106, 168, 66) !important;
     --bs-bg-opacity: 1 !important;
     margin: 20px 40px !important;
     padding: 0 !important;
     border-radius: 20px;
 
-    .navbar-brand, .nav-link {
-        color: black !important;
+    .navbar-brand, .color-link {
+        color: rgb(255, 255, 255) !important;
     }
+
+
 }
 
-.container-fluid, .navbar-collapse {
-    background-color: #fff;
+.container-fluid-navbar, .navbar-collapse {
+    background-color: rgb(106, 168, 66);
     border-radius: 20px;
     padding: 1rem;
     width: 50% !important;
@@ -54,11 +56,15 @@ li::after {
     left: 50%;
     width: 0;
     height: 3px;
-    background-color: rgb(106, 168, 66); ;
+    background-color: rgb(217, 217, 217); ;
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
     transform: translateX(-50%);
 }
 
 li:hover::after {
     width: 100%;
+}
+
+.color-text {
+    color: black !important;
 }

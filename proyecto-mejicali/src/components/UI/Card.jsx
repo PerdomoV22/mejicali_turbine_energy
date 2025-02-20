@@ -3,8 +3,8 @@ import { MdEnergySavingsLeaf } from "react-icons/md";
 
 const Card = ({ title, description, to }) => {
     return (
-        <div className="col-sm-6">
-            <div className="card card-serv">
+        <div className="col-sm-6 d-flex">
+            <div className="card h-100 card-serv">
                 <div className="card-body card-boby-servicies">
                     <div className="card-cabeza-servicies">
                         <MdEnergySavingsLeaf className="card-icon"/>
