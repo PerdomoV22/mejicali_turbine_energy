@@ -1,4 +1,4 @@
-import logo from '/src/assets/images/react.svg';
+import logo from '/src/assets/images/logo-mte.png';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -7,14 +7,13 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
-                        <img src={logo} alt="" width="30" height="24" className="d-inline-block align-text-top" />
-                        Mejicali Turbine Energy
+                        <img src={logo} alt="" width="150" height="30" className="d-inline-block align-text-top" />
                     </Link>
                 </div>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item dropdown">
-                            <Link className="nav-link" aria-current="page" to="/">Sobre </Link>
+                            <Link className="nav-link" aria-current="page" to="/">Sobre Nosotros</Link>
                         </li>
                         <li className="nav-item dropdown">
                             <Link className="nav-link" aria-current="page" to="/servicios">Servicios</Link>

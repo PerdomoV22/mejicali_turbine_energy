@@ -1,0 +1,28 @@
+.max-width {
+    max-width: 1200px;
+}
+
+.bottom-margin {
+    margin-bottom: 6rem !important;
+}
+
+.container-servicies {
+    margin: 0 auto;
+    text-align: center;
+
+    hr {
+        width: 10%;
+        height: 2px;
+        margin: 2rem auto 2.5rem;
+        background-color: gray;
+    }
+}
+
+@media (min-width: 1280px) {
+    .m-text {
+        padding-left: 15rem;
+        padding-right: 15rem;
+        padding-bottom: 3rem;
+    }
+    
+}

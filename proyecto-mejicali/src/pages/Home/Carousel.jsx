@@ -13,7 +13,7 @@ const Carousel = () => {
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div className="carousel-inner">
-                <div className="carousel-item active">
+                <div className="carousel-item active"  data-bs-interval="10000">
                     <img src={Fotoproyecto1} className="d-block w-100 carousel-img" alt="Proyecto GMD 2022" />
                     <div className="carousel-caption d-none d-md-block carousel-caption">
                         <h1>Mejicali Turbine Energy</h1>
@@ -22,7 +22,7 @@ const Carousel = () => {
                         <Button text="Conoce más" to="/servicios" />
                     </div>
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item" data-bs-interval="10000">
                     <img src={Serviciosmte} className="d-block w-100 carousel-img" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
                         <h1>Soluciones Energéticas Personalizadas</h1>

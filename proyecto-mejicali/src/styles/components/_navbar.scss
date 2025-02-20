@@ -1,5 +1,5 @@
 .custom-navbar {
-    position: absolute !important;
+    position: fixed !important;
     width: 95%;
     top: 0;
     left: 0;
@@ -21,6 +21,44 @@
     background-color: #fff;
     border-radius: 20px;
     padding: 1rem;
+    width: 50% !important;
 }
 
+.navbar {
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
 
+        
+        li {
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+        }
+    }
+}
+
+  /* Línea animada */
+li {
+    display: inline-block;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: rgb(106, 168, 66); ;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+li:hover::after {
+    width: 100%;
+}

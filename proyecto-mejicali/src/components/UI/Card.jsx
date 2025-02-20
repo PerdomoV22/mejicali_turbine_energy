@@ -1,13 +1,19 @@
 import Button from "./buttton";
+import { MdEnergySavingsLeaf } from "react-icons/md";
 
 const Card = ({ title, description, to }) => {
     return (
-        <div className="card" style="width: 18rem;">
-            <div className="card-body">
-                <h5 className="card-title">{title}</h5>
-                <p className="card-text">{description}</p>
-                <Button text="Ver más" to={to} />
-            </div>
+        <div className="col-sm-6">
+            <div className="card card-serv">
+                <div className="card-body card-boby-servicies">
+                    <div className="card-cabeza-servicies">
+                        <MdEnergySavingsLeaf className="card-icon"/>
+                        <h5 className="card-title-servicies">{title}</h5>
+                    </div>
+                    <p className="card-text">{description}</p>
+                    <Button text="Más información" to={to} /> 
+                </div>
+            </div>            
         </div>
     )
 }
