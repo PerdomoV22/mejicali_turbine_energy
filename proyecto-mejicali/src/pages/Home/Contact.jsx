@@ -4,7 +4,7 @@ import { MdOutlineEnergySavingsLeaf } from "react-icons/md";
 export const Contact = () => {
     return (
         <>
-            <section className="container-servicies bottom-margin max-width">
+            <section className="container-services bottom-margin max-width">
                 <div className="container-division-top">
                     <h2 className="title-servicies">¡Energía confiable cuando más la necesitas!</h2>
                     <hr />

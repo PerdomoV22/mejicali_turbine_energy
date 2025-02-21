@@ -4,7 +4,7 @@ import routes from "./RoutesProject";
 const Projects = () => {
   return (
     <>
-      <div className="container">
+      <div>
         <Routes>
           {routes.map((route, idx) => {
             return (

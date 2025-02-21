@@ -7,7 +7,7 @@ const About = React.lazy(() => import('../pages/About/About'));
 
 const routes = [
     { path: '*', name: 'Home', element: Home, exact: true },
-    { path: '/about', name: 'Sobre Nosotros', element: About, exact: true },
+    { path: '/sobre-nosotros', name: 'Sobre Nosotros', element: About, exact: true },
     { path: '/servicios', name: 'Servicios', element: Services, exact: true },
     { path: '/proyectos/*', name: 'Proyectos', element: Projects, exact: true },
 ];

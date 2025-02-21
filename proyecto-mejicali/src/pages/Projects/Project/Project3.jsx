@@ -1,7 +1,14 @@
+import Fotoproyecto1 from '../../../assets/images/proyecto-gmd-2022.jpg';
+import HeroSection from '../../../components/UI/HeroSection';
+
 const Project3 = () => {
     return (
         <>
-            <h1>Hola soy proyecto 3</h1>
+            <HeroSection
+                src = {Fotoproyecto1}
+                title = "Proyecto Palo Seco"
+                description = "Desde 2021, nuestra misión es transformar la forma en que se suministra energía en el mundo. Con tecnología de vanguardia y soluciones rápidas, ayudamos a empresas a garantizar una estabilidad energética."
+            />
         </>
     );
 };
