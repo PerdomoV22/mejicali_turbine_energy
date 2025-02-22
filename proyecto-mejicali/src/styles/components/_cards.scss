@@ -39,7 +39,7 @@
 
     hr {
         width: 30%;
-        height: 2px; /* Grosor adecuado */
+        height: 2px; 
         margin: 0 auto;
         background-color: gray;
         border: none;
@@ -63,7 +63,7 @@
 }
 
 .cards-servicies {
-    width: 80%;
+    width: 80% !important;
     margin: 0 auto !important;
 }
 

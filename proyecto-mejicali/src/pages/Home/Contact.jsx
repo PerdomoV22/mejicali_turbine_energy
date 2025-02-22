@@ -15,7 +15,7 @@ export const Contact = () => {
                         sin comprometer la calidad ni la seguridad. 
                     </p>
                     <p className="m-text m-sub">
-                        <FaLightbulb className="icon-contac"/> Convierte los desafíos en oportunidades. Hablemos sobre tu próximo proyecto. <MdOutlineEnergySavingsLeaf className="icon-contac" color="red"/>
+                        <FaLightbulb className="icon-contac"/> Convierte los desafíos en oportunidades. Hablemos sobre tu próximo proyecto. <MdOutlineEnergySavingsLeaf className="icon-contac" color="green"/>
                     </p>
                 </div>
                 <div></div>

@@ -41,7 +41,7 @@
 }
 
 // ----------------- Section Info --------------
-.conatiner-info {
+.container-info {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -81,7 +81,7 @@
         border: none; 
         height: 4px;
         background-color: rgb(106, 168, 66); 
-    }
+    } 
 
     p {
         font-size: 1rem;

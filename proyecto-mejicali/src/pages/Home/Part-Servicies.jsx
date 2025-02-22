@@ -13,7 +13,7 @@ const PartServices = () => {
                     excepcionales en tiempos récord.
                 </p>
             </div>
-            <div className="row max-width bottom-margin cards-services"> 
+            <div className="row max-width bottom-margin cards-servicies"> 
                 <Card 
                     title="Energía Rápida" 
                     description="Somos expertos en la construcción, instalación, puesta en marcha, operación y mantenimiento de proyectos de energía eléctrica de rápida implementación (fast-track)." 
@@ -28,5 +28,5 @@ const PartServices = () => {
         </section>
     );
 };
-
+ 
 export default PartServices;
