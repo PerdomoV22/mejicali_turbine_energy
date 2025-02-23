@@ -32,14 +32,12 @@ const Footer = () => {
     return (
         <footer className="container-fluid container-footer">
             <div className="row container-sub-footer p-5 pb-1 text-white">
-                
                 {/* Logo */}
                 <div className="col-xs-12 col-md-6 col-lg-3">
                     <Link to="/">
                         <img className="logo-footer" src={LogoFooter} alt="Logo MTE" />
                     </Link>
                 </div>
-
                 {/* Secciones dinámicas de enlaces */}
                 {footerLinks.map((section, index) => (
                     <div key={index} className="col-xs-12 col-md-6 col-lg-3">
@@ -53,7 +51,6 @@ const Footer = () => {
                         ))}
                     </div>
                 ))}
-
                 {/* Derechos de autor */}
                 <div className="col-xs-12 pt-4">
                     <hr />
