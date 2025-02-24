@@ -149,7 +149,129 @@
     }
     
     .container-division-top {
-        padding-bottom: 3rem;
+        padding-bottom: 20px;
+    }
+}
+
+.contacto-container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+
+
+    .contacto-info {
+        background: rgb(106, 168, 66);
+        color: white;
+        padding: 30px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .icon-redessociales-contact {
+            font-size: 2rem;
+            color: white !important; 
+            margin: 0.4rem;
+        }
+    
+        .contacto-logo {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+    
+            img {
+                width: 70px;
+                margin-right: 10px;
+            }
+    
+            span {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    
+        .contacto-reviews {
+            font-size: 14px;
+            a {
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .contacto-formulario {
+        position: relative;
+        background: rgb(217, 217, 217); // Gris
+        padding: 30px;
+        top: -60px;
+        left: -60px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+        h4 {
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                display: block;
+                text-align: left; 
+                margin-bottom: 5px; 
+            }
+
+            .row {
+                display: flex;
+                gap: 15px;
+
+                .col-md-6 {
+                    flex: 1;
+                }
+            }
+
+            input, textarea {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid rgb(255, 255, 255);
+                padding: 5px;
+                outline: none;
+                background: none;
+            }
+
+            textarea {
+                resize: none;
+                overflow: hidden;
+                height: 60px;
+            }
+        
+            button {
+                background: rgb(106, 168, 66);
+                color: white;
+                border: none;
+                padding: 12px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: 0.3s;
+                border-radius: 8px;
+                width: 100%;
+        
+                &:hover {
+                    background:rgb(153, 188, 60);
+                }
+            }
+        }
     }
 }
 

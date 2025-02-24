@@ -1,0 +1,46 @@
+$primary-color: #007bff;
+$background-color: #f9f9f9;
+$text-color: #333;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+.energy-solutions {
+    padding: 2rem 2rem;
+    background: $background-color;
+    text-align: center;
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: $text-color;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: $shadow;
+            padding: 1.5rem;
+            width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            }
+
+            h3 {
+                font-size: 1.3rem;
+            }
+
+            .solution-icon {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

@@ -21,9 +21,10 @@ const footerLinks = [
     {
         title: "Proyectos",
         links: [
-            { text: "Proyecto 1", path: "" },
-            { text: "Proyecto 2", path: "" },
-            { text: "Proyecto 3", path: "" },
+            { text: "Proyecto GMD 2022", path: "/proyectos" },
+            { text: "Proyecto GMD 2021", path: "/proyectos/proyecto2" },
+            { text: "Proyecto Palo Seco", path: "/proyectos/proyecto3" },
+            { text: "Proyecto S.E. Movil Tula", path: "/proyectos/proyecto4" },
         ],
     },
 ];

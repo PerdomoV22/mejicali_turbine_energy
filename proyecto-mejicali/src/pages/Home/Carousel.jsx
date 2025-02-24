@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Fotoproyecto1 from "../../assets/images/proyecto-gmd-2022.jpg";
 import Serviciosmte from "../../assets/images/servicios-mte.jpg";
 import Fotoproyecto2 from "../../assets/images/proyecto-tula.jpg";
@@ -5,7 +6,7 @@ import Button from "../../components/UI/buttton";
 
 const slides = [
     {
-        id: 1,
+        id: 0,
         image: Fotoproyecto1,
         title: "Mejicali Turbine Energy",
         description:
@@ -14,7 +15,7 @@ const slides = [
         buttonLink: "/servicios",
     },
     {
-        id: 2,
+        id: 1,
         image: Serviciosmte,
         title: "Soluciones Energéticas Personalizadas",
         description:
@@ -23,7 +24,7 @@ const slides = [
         buttonLink: "/servicios",
     },
     {
-        id: 3,
+        id: 2,
         image: Fotoproyecto1,
         title: "Proyectos en 60 Días",
         description:
@@ -32,7 +33,7 @@ const slides = [
         buttonLink: "/proyectos",
     },
     {
-        id: 4,
+        id: 3,
         image: Fotoproyecto2,
         title: "Energía para la Refinería",
         description:
@@ -43,8 +44,28 @@ const slides = [
 ];
 
 const Carousel = () => {
+    
+    useEffect(() => {
+        const initializeCarousel = () => {
+            const carouselElement = document.getElementById("carouselExampleCaptions");
+            if (carouselElement && window.bootstrap) {
+                    const carousel = new window.bootstrap.Carousel(carouselElement, {
+                    interval: 5000, // Cambia cada 5 segundos
+                    ride: "carousel", // Activa el modo automático
+                });
+                // Forzar la inicialización del primer ítem
+                carousel.to(0); // Asegura que el primer ítem sea visible
+            } else {
+                console.error("Bootstrap Carousel no está disponible.");
+            }
+        };
+    
+        // Espera un breve momento para asegurar que Bootstrap esté cargado
+        setTimeout(initializeCarousel, 1000);
+    }, []);
+
     return (
-        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" className="carousel slide carousel-home" data-bs-ride="carousel">
             {/* Indicadores */}
             <div className="carousel-indicators">
                 {slides.map((_, index) => (
@@ -57,7 +78,7 @@ const Carousel = () => {
                         aria-label={`Slide ${index + 1}`}
                     ></button>
                 ))}
-            </div>
+            </div> 
 
             {/* Contenido del Carrusel */}
             <div className="carousel-inner">
@@ -65,7 +86,7 @@ const Carousel = () => {
                     <div
                         key={slide.id}
                         className={`carousel-item ${index === 0 ? "active" : ""}`}
-                        data-bs-interval="10000"
+                        data-bs-interval="1000"
                     >
                         <img src={slide.image} className="d-block w-100 carousel-img" alt={slide.title} />
                         <div className="carousel-caption d-none d-md-block">
