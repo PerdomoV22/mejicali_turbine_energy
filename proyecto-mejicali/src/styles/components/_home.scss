@@ -19,16 +19,14 @@
 }
 
 //------------------------- Part-PJT------------------------------
-
-.color-container-pjt {
-    background: rgb(217, 217, 217);
-}
-
 .container-pjt {
     position: relative;
+    width: 80%;
     margin: 0 auto;
     box-sizing: content-box;
     padding: 0 20px;
+    background: linear-gradient(135deg, rgb(106,168,66), rgb(248,234,58));
+    border-radius: 2rem;
 }
 
 .card-prin-pjt {
@@ -36,7 +34,7 @@
 }
 
 .con-pjt {
-    padding: 72px 120px;
+    padding: 60px 70px;
 }
 
 .two-column {
@@ -92,13 +90,14 @@
 
 .left-column {
     .title-pjt {
-        color: rgb(108, 168, 66);
+        color: white;
         font-weight: bold;
         font-size: 2rem;
     }
 
     .description-pjt {
-        font-weight: 300;
+        color: white;
+        font-weight: 500;
     }
 }
 

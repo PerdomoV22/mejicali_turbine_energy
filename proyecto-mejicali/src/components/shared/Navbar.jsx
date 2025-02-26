@@ -1,5 +1,7 @@
 import logo from '/src/assets/images/logo-mte.png';
 import { Link } from 'react-router-dom';
+import { TbWorld } from "react-icons/tb";
+import { useState } from 'react';
 
 const navLinks = [
     { label: 'Sobre Nosotros', path: '/sobre-nosotros' },
@@ -21,29 +23,78 @@ const NavItem = ({ label, path, submenu }) => (
     <li className={`nav-item${submenu ? ' dropdown' : ''}`}>
         {submenu ? (
             <>
-                <Link className="nav-link color-link dropdown-toggle" to={path} id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <Link 
+                    className="nav-link color-link dropdown-toggle" 
+                    to={path} 
+                    id="navbarDropdownMenuLink" 
+                    role="button" 
+                    data-bs-toggle="dropdown" 
+                    aria-expanded="false"
+                >
                     {label}
                 </Link>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul className="dropdown-menu dropdown-menu-items" aria-labelledby="navbarDropdownMenuLink">
                     {submenu.map((item, index) => (
-                        <Link key={index} className="nav-link color-text" to={item.path}>{item.label}</Link>
+                        <li key={index}>
+                            <Link className="dropdown-item" to={item.path}>
+                                {item.label}
+                            </Link>
+                        </li>
                     ))}
                 </ul>
             </>
         ) : (
-            <Link className="nav-link color-link" to={path}>{label}</Link>
+            <Link className="nav-link color-link" to={path}>
+                {label}
+            </Link>
         )}
     </li>
 );
 
 const Navbar = () => {
+
+    const [language, setLanguage] = useState('Español'); // Estado para el idioma seleccionado
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light custom-navbar">
+            {/* Logo */}
             <div className="container-fluid-navbar">
                 <Link className="navbar-brand" to="/">
                     <img src={logo} alt="Logo" width="90" height="30" className="d-inline-block align-text-top" />
                 </Link>
             </div>
+
+            {/* Botón de cambio de idioma */}
+            <div className="dropdown language-dropdown">
+                <button 
+                    className="btn btn-light dropdown-toggle" 
+                    type="button" 
+                    id="languageDropdown" 
+                    data-bs-toggle="dropdown" 
+                    aria-expanded="false"
+                >
+                    <TbWorld className='icon-navbar-lenguaje'/> {language}
+                </button>
+                <ul className="dropdown-menu menu-language" aria-labelledby="languageDropdown">
+                    <li>
+                        <button 
+                            className="dropdown-item" 
+                            onClick={() => setLanguage('Español')}
+                        >
+                            Español
+                        </button>
+                    </li>
+                    <li>
+                        <button 
+                            className="dropdown-item" 
+                            onClick={() => setLanguage('Inglés')}
+                        >
+                            Inglés
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            {/* Botónes de menú */}
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
                     {navLinks.map((navItem, index) => (

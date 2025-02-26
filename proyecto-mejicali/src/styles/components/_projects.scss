@@ -1,0 +1,273 @@
+// -------------- Project Card Intro --------------
+
+//-------------- Project Card --------------
+.about {
+    text-align: center;
+    padding: 50px;
+    color: #333;
+    margin-top: 0.7rem;
+
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+      color: gray;
+      margin-bottom: 20px;
+    }
+
+    &__divider {
+      width: 80%;
+      margin: 0 auto 20px;
+      border: none;
+      border-top: 1px solid black;
+    }
+
+    &__description {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+}
+
+//-------------- Project Collage --------------
+.collage {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  margin-bottom: 3rem;
+
+  &__image {
+    width: 33.33%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    &__image {
+      width: 100%;
+    }
+  }
+}
+
+//-------------- Project Card Info --------------
+.panel-info-projects {
+    text-align: center;
+    padding: 50px;
+    color: #333;
+
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+
+      span {
+        color: rgb(106,168,66);
+      }
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0 auto;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    &__icon {
+      font-size: 40px;
+      color: rgb(106,168,66);
+      margin-bottom: 15px;
+    }
+
+    &__item-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    &__item-description {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      &__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 500px) {
+      &__grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+}
+
+//-------------- Project Info --------------
+.highlight {
+  background: linear-gradient(135deg, rgb(106,168,66), rgb(248,234,58));
+  color: white;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.highlight__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.highlight__text span {
+  font-weight: bold;
+  color: #f8e71c;
+}
+
+.highlight__stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.highlight__stat {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.highlight__stat:hover {
+  transform: scale(1.05);
+}
+
+.highlight__icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight__closing {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+//-------------- Project detalles del proyecto --------------
+.project-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  background-color: #f4f4f4;
+  padding: 40px;
+  border-radius: 10px;
+
+  .content {
+    max-width: 50%;
+
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .details-list {
+      list-style: none;
+      padding: 0;
+
+      .detail-item {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+
+        .icon {
+          color: #99bc3c;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .image-container {
+    max-width: 45%;
+
+    .image {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
+
+// -------------- Project alcance del proyecto --------------
+.project-scope {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  background-color: #f4f4f4;
+  padding: 40px;
+  border-radius: 10px;
+
+  .content {
+    max-width: 50%;
+
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .scope-list {
+      list-style: none;
+      padding: 0;
+
+      .scope-item {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+
+        .icon {
+          color: #99bc3c;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  }
+
+  .image-container {
+    max-width: 45%;
+
+    .image {
+      width: 100%;
+      border-radius: 10px;
+      height: 400px;
+    }
+  }
+}
+
+
+
