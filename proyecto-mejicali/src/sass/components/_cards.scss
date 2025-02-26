@@ -1,0 +1,107 @@
+// Importar variables y mixins necesarios
+@import '../utils/variables';
+@import '../utils/mixins';
+
+// Estilos específicos para las tarjetas "About"
+.cards-about {
+    position: relative;
+    margin: 0 auto !important;
+    margin-top: -50px !important;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    > * {
+        max-width: 30% !important; // Limita el ancho de cada tarjeta
+    }
+
+    .card-about {
+        padding: $card-padding;
+        box-shadow: $shadow;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        border: 2px solid transparent;
+
+        // Ícono de la tarjeta
+        .icon {
+            font-size: $icon-size-large;
+            color: $second-color;
+        }
+
+        // Espaciado entre elementos
+        .icon,
+        .card-text {
+            padding-bottom: 1rem;
+        }
+    }
+}
+
+.card-body {
+    text-align: center;
+
+    // Línea divisoria
+    hr {
+        width: 30%;
+        height: 2px;
+        margin: 0 auto;
+        background-color: gray;
+        border: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    // Texto de la tarjeta
+    .card-text {
+        text-align: left;
+        padding-top: 1rem;
+    }
+}
+
+// Efecto hover para las tarjetas "About"
+.card-about:hover {
+    border-color: $second-color;
+    transform: translateY(-5px);
+
+    hr {
+        width: 60%;
+        background-color: $second-color;
+    }
+}
+
+// Estilos específicos para las tarjetas "Services"
+.cards-servicies {
+    width: 80% !important;
+    margin: 0 auto !important;
+}
+
+.card-boby-servicies {
+    text-align: left;
+    padding: 30px !important;
+
+    // Efecto hover para las tarjetas "Services"
+    &:hover {
+        box-shadow: 0 0 20px $second-color;
+        transition: box-shadow 0.2s ease;
+        border-radius: 2rem !important;
+    }
+}
+
+.card-cabeza-servicies {
+    display: flex;
+    align-items: flex-start;
+
+    // Ícono de la tarjeta "Services"
+    .card-icon {
+        font-size: $icon-size-medium;
+        color: $primary-color;
+    }
+}
+
+.card-title-servicies {
+    font-size: 1.8rem;
+    padding-left: 0.5rem;
+}
+
+.card-serv {
+    border-radius: 2rem !important;
+}

@@ -28,5 +28,5 @@ const PartServices = () => {
         </section>
     );
 };
- 
+
 export default PartServices;

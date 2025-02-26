@@ -1,0 +1,133 @@
+// Importar variables y mixins necesarios
+@import '../utils/variables';
+@import '../utils/mixins';
+
+// Estilos específicos del Panel About
+.container-panel {
+    background-color: white;
+    padding: $panel-padding;
+    border-radius: 100px 100px 0 0;
+    max-width: 80%;
+    margin: -50px auto 0;
+    box-shadow: $shadow;
+    text-align: center;
+    position: relative;
+
+    // Contenedor de información
+    .container-panel-info {
+        display: flex;
+        justify-content: space-between;
+        gap: $column-gap;
+        margin-bottom: 1.5rem;
+
+        .container-colunm {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .panel-title {
+            margin-bottom: 36px;
+        }
+
+        p {
+            margin-bottom: 16px;
+            text-align: left;
+            width: 70%;
+        }
+    }
+
+    // Contenedor de tarjetas
+    .container-panel-card {
+        display: flex;
+        justify-content: space-evenly;
+
+        .card-column {
+            width: $card-width-about; 
+            height: $card-height;
+            border-radius: 15px;
+            text-align: center;
+            padding: 20px;
+            transition: all $transition-duration ease-in-out;
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: $shadow;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .card-title {
+                font-size: 1.5rem;
+                font-weight: 400;
+                transition: color $transition-duration ease-in-out;
+            }
+
+            &:hover {
+                transform: scale(0.95);
+                box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.3),
+                            inset 0px -5px 15px rgba(255, 255, 255, 0.2);
+
+                .icon-panel,
+                .card-title {
+                    color: white;
+                }
+            }
+
+            .icon-panel {
+                width: $icon-size;
+                height: $icon-size;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .card-column:nth-child(1) {
+            .icon-panel,
+            .card-title {
+                color: $primary-green;
+            }
+
+            &:hover {
+                background-color: $primary-green;
+
+                .icon-panel,
+                .card-title {
+                    color: white;
+                }
+            }
+        }
+
+        .card-column:nth-child(2) {
+            .icon-panel,
+            .card-title {
+                color: $primary-yellow;
+            }
+
+            &:hover {
+                background-color: $primary-yellow;
+
+                .icon-panel,
+                .card-title {
+                    color: white;
+                }
+            }
+        }
+
+        .card-column:nth-child(3) {
+            .icon-panel,
+            .card-title {
+                color: $primary-gray;
+            }
+
+            &:hover {
+                background-color: $primary-gray;
+
+                .icon-panel,
+                .card-title {
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,178 @@
+//---------- Colores Especificos ----------//
+$primary-color: rgb(153, 188, 60);
+$second-color: rgb(106, 168, 66);
+$background-light: rgb(217, 217, 217);
+$text-color: #333;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$text-color-light: white;
+$text-color-secondary: #666;
+$primary-black: #000000;
+
+// Home
+$shadow-home: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+// Navbar
+$shadow-navbar: 0px 6px 12px rgba(0, 0, 0, 0.15);
+
+// Projects
+$shadow-projects: 0px 4px 10px rgba(0, 0, 0, 0.2);
+$second-gray: rgba(255, 255, 255, 0.2);
+$second-green: #99bc3c;
+
+// Carousel
+$text-color-carousel: #ffffff;
+$text-color-secondary: #cccccc;
+$carousel-indicator-active-bg: #ffffff;
+
+// Panel About
+$primary-green: rgb(106, 168, 66);
+$primary-yellow: rgb(248, 234, 58);
+$primary-gray: rgb(198, 197, 198);
+
+// Panel Services
+$text-color-secondary: #666;
+$background-color: #f4f4f4;
+
+// Panel Solutions
+$background-color: #f9f9f9;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+// Hero Section
+$background-dark-overlay: rgba(0, 0, 0, 0.5);
+
+// Button WhatsApp
+$whatsapp-green: #25d366;
+$whatsapp-green-hover: #1ebe57;
+
+//----------- Tamaños Especificos ----------//
+$title-font-size: 2rem; //2.5rem; -panel pjt medida
+$card-title-font-size: 1.3rem; //1.2rem; -panel pjt medida
+$icon-font-size: 1.5rem;
+$subtitle-font-size: 1.2rem; // 1.5rem; -about, 1rem; -projects
+$description-font-size: 1rem;
+$card-text-font-size: 0.9rem;
+$paragraph-font-size: 1rem;
+$card-padding: 1.5rem; // 2rem; -Cards
+
+// Home
+$border-radius-large: 2rem;
+$border-radius-medium: 1.5rem;
+$button-size: 35px;
+
+// Navbar
+$navbar-height: 60px;
+$border-radius: 20px;
+
+// Projects
+$item-font-size: 1.2rem;
+$padding-large: 3rem;
+
+// Button
+$button-padding: 12px;
+$button-font-size: 16px;
+
+// Contact
+$icon-size-large-contact: 2rem;
+$form-input-height: 60px;
+$form-button-padding: 12px;
+
+// Footer
+$footer-link-line-height: 2px;
+$footer-link-transition-duration: 0.3s;
+
+// Carousel
+$title-font-size-carousel: 4rem;
+$paragraph-font-size-carousel: 1.5rem;
+$button-font-size: 1.5rem;
+
+// About
+$icon-size: 80px;
+
+// Cards
+$icon-size-large: 4rem;
+$icon-size-medium: 2.5rem;
+
+//Panel About
+$card-width-about: 200px;
+$card-height: 200px;
+$icon-size: 50px;
+
+// Panel PjT Medida
+$indicator-size: 10px;
+$carousel-gap: 10px;
+
+// Panel Services
+$section-padding: 50px;
+$header-max-width: 800px;
+$circle-size: 70px;
+$step-gap: 40px;
+
+// Panel Solutions
+$card-width: 250px;
+$card-hover-translate: -10px;
+
+// Hero Section
+$hero-section-height: 90vh;
+$hero-text-width: 60%;
+$hero-title-font-size: 2.5rem;
+$hero-paragraph-font-size: 1.2rem;
+
+// Button WhatsApp
+$whatsapp-button-size: 55px;
+
+// ---------- Espaciados Especificos ----------//
+
+// Home
+$padding-large: 60px;
+$padding-medium-home: 20px;
+
+// Navbar
+$gap-small-navbar: 0.5rem;
+$padding-medium: 1rem;
+
+// Projects
+$gap-medium: 2rem;
+$gap-small: 1rem;
+
+// Contact
+$form-gap: 15px;
+$form-padding: 30px;
+
+// Carousel
+$carousel-caption-width: 80%;
+$carousel-indicators-bottom: 3.5rem;
+
+// About
+$section-gap: 40px;
+$item-padding: 20px;
+$image-max-width: 400px;
+
+// Cards
+$card-gap: 20px;
+
+// Panel About
+$panel-padding: 60px 40px;
+$column-gap: 20px;
+
+// Panel Solutions
+$section-padding: 2rem;
+$card-gap: 2rem;
+
+// Hero Section
+$padding-base: 20px;
+
+
+//---------- Altura Especificas ----------//
+
+// Carousel
+$carousel-height: 95vh;
+$carousel-image-height: 100vh;
+
+// ---------- Anchura Especificas ----------//
+
+// Footer
+$footer-container-width: 80%;
+$footer-logo-width: 45%;
+
+// ---------- Transiciones Especificas ----------//
+$transition-duration: 0.3s;

@@ -1,0 +1,288 @@
+// Importar variables y mixins necesarios
+@import '../utils/variables';
+@import '../utils/mixins';
+
+//-------------- Project Card --------------
+.about {
+    text-align: center;
+    padding: $padding-large;
+    color: $text-color;
+    margin-top: 0.7rem;
+
+    &__title {
+        font-size: $title-font-size;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        font-size: $subtitle-font-size;
+        color: gray;
+        margin-bottom: 20px;
+    }
+
+    &__divider {
+        width: 80%;
+        margin: 0 auto 20px;
+        border: none;
+        border-top: 1px solid black;
+    }
+
+    &__description {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+}
+
+//-------------- Project Collage --------------
+.collage {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    margin-bottom: 3rem;
+
+    &__image {
+        width: 33.33%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.1s ease-in-out;
+
+        &:hover {
+        transform: scale(1.05);
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        &__image {
+        width: 100%;
+        }
+    }
+    }
+
+//-------------- Project Card Info --------------
+.panel-info-projects {
+    text-align: center;
+    padding: 50px;
+    color: $text-color;
+
+    &__title {
+        font-size: $title-font-size;
+        font-weight: bold;
+        margin-bottom: 20px;
+
+        span {
+            color: $second-color;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    &__icon {
+        font-size: 40px;
+        color: $second-color;
+        margin-bottom: 15px;
+    }
+
+    &__item-title {
+        font-size: $item-font-size;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__item-description {
+        font-size: $subtitle-font-size;
+        color: $text-color-secondary;
+    }
+
+    @media (max-width: 768px) {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 500px) {
+        &__grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+//-------------- Project Info icons --------------
+.highlight {
+    background: linear-gradient(135deg, $second-color, $primary-yellow);
+    color: $text-color-light;
+    padding: $padding-large;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: $shadow-projects;
+}
+
+.highlight__title {
+    font-size: $title-font-size;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.highlight__text span {
+    font-weight: bold;
+    color: $primary-yellow;
+}
+
+.highlight__stats {
+    display: flex;
+    justify-content: center;
+    gap: $gap-medium;
+    margin: 2rem 0;
+}
+
+.highlight__stat {
+    background: $second-gray;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform $transition-duration ease;
+}
+
+.highlight__stat:hover {
+    transform: scale(1.05);
+}
+
+.highlight__icon {
+    font-size: $title-font-size;
+    margin-bottom: 0.5rem;
+}
+
+.highlight__closing {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+//-------------- Project detalles del proyecto --------------
+.project-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    background-color: $background-color;
+    padding: 40px;
+    border-radius: 10px;
+
+    .content {
+        max-width: 50%;
+
+        .title {
+            font-size: $title-font-size;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .details-list {
+            list-style: none;
+            padding: 0;
+
+            .detail-item {
+                display: flex;
+                align-items: center;
+                font-size: $item-font-size;
+                margin-bottom: 10px;
+
+                .icon {
+                    color: $second-green;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .image-container {
+        max-width: 45%;
+
+        .image {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform $transition-duration ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+// -------------- Project alcance del proyecto --------------
+.project-scope {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    background-color: $background-color;
+    padding: 40px;
+    border-radius: 10px;
+
+    .content {
+        max-width: 50%;
+
+        .title {
+            font-size: $title-font-size;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .scope-list {
+            list-style: none;
+            padding: 0;
+
+            .scope-item {
+                display: flex;
+                align-items: center;
+                font-size: $item-font-size;
+                margin-bottom: 20px;
+
+                .icon {
+                    color: $second-green;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        p {
+            font-size: $item-font-size;
+            margin-top: 10px;
+        }
+    }
+
+    .image-container {
+        max-width: 45%;
+
+        .image {
+            width: 100%;
+            border-radius: 10px;
+            height: 400px;
+            object-fit: cover;
+            transition: transform $transition-duration ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}

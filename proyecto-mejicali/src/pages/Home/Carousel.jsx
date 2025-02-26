@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Fotoproyecto1 from "../../assets/images/proyecto-gmd-2022.jpg";
 import Serviciosmte from "../../assets/images/servicios-mte.jpg";
 import Fotoproyecto2 from "../../assets/images/proyecto-tula.jpg";
@@ -45,12 +45,14 @@ const slides = [
 
 const Carousel = () => {
     
+    //const carouselRef  = useRef(null);
+
     useEffect(() => {
         const initializeCarousel = () => {
             const carouselElement = document.getElementById("carouselExampleCaptions");
             if (carouselElement && window.bootstrap) {
                     const carousel = new window.bootstrap.Carousel(carouselElement, {
-                    interval: 5000, // Cambia cada 5 segundos
+                    interval: 25000, // Cambia cada 5 segundos
                     ride: "carousel", // Activa el modo automático
                 });
                 // Forzar la inicialización del primer ítem
@@ -61,7 +63,7 @@ const Carousel = () => {
         };
     
         // Espera un breve momento para asegurar que Bootstrap esté cargado
-        setTimeout(initializeCarousel, 1000);
+        setTimeout(initializeCarousel, 5000);
     }, []);
 
     return (
@@ -86,7 +88,7 @@ const Carousel = () => {
                     <div
                         key={slide.id}
                         className={`carousel-item ${index === 0 ? "active" : ""}`}
-                        data-bs-interval="1000"
+                        data-bs-interval="2000"
                     >
                         <img src={slide.image} className="d-block w-100 carousel-img" alt={slide.title} />
                         <div className="carousel-caption d-none d-md-block">

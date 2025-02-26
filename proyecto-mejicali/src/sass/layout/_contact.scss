@@ -1,0 +1,151 @@
+// Importar variables y mixins necesarios
+@import '../utils/variables';
+@import '../utils/mixins';
+
+// Estilo del ícono de contacto
+.icon-contac {
+    font-size: $icon-size-large-contact;
+    color: yellow;
+}
+
+// Media query para pantallas grandes
+@media (min-width: 1280px) {
+    .m-text {
+        padding: 0 15rem 15px 15rem;
+        font-size: 1.1rem;
+    }
+
+    .m-sub {
+        font-weight: 600;
+    }
+
+    .container-division-top {
+        padding-bottom: 20px;
+    }
+}
+
+// Contenedor principal del contacto
+.contacto-container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+
+    // Información de contacto
+    .contacto-info {
+        background: $second-color;
+        color: $text-color-light;
+        padding: $form-padding;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        border-radius: 12px;
+        box-shadow: $shadow;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .icon-redessociales-contact {
+            font-size: $icon-size-large-contact;
+            color: $text-color-light !important;
+            margin: 0.4rem;
+        }
+
+        .contacto-logo {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+
+            img {
+                width: 70px;
+                margin-right: 10px;
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+
+        .contacto-reviews {
+            font-size: 14px;
+
+            a {
+                color: $text-color-light;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // Formulario de contacto
+    .contacto-formulario {
+        position: relative;
+        background: $background-light;
+        padding: $form-padding;
+        top: -60px;
+        left: -60px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+        h4 {
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                display: block;
+                text-align: left;
+                margin-bottom: 5px;
+            }
+
+            .row {
+                display: flex;
+                gap: $form-gap;
+
+                .col-md-6 {
+                    flex: 1;
+                }
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid $text-color-light;
+                padding: 5px;
+                outline: none;
+                background: none;
+            }
+
+            textarea {
+                resize: none;
+                overflow: hidden;
+                height: $form-input-height;
+            }
+
+            button {
+                background: $second-color;
+                color: $text-color-light;
+                border: none;
+                padding: $form-button-padding;
+                font-size: 16px;
+                cursor: pointer;
+                transition: $transition-duration;
+                border-radius: 8px;
+                width: 100%;
+
+                &:hover {
+                    background: $primary-color;
+                }
+            }
+        }
+    }
+}

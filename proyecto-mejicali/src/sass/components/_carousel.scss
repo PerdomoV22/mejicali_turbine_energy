@@ -1,0 +1,66 @@
+// Importar variables y mixins necesarios
+@import '../utils/variables';
+@import '../utils/mixins';
+
+// Estilos específicos para el Carousel
+.carousel-home {
+    margin-top: 0;
+    z-index: 1;
+
+    // Contenedor interno del carrusel
+    .carousel-inner {
+        width: 100%;
+        height: $carousel-height;
+
+        // Título principal
+        h1 {
+            font-size: $title-font-size-carousel;
+            padding-bottom: 0.5rem;
+            color: $text-color-carousel;
+        }
+
+        // Párrafo
+        p {
+            font-size: $paragraph-font-size-carousel;
+            font-weight: normal;
+            padding-bottom: 1.5rem;
+        }
+
+        // Botón
+        .btn {
+            font-size: $button-font-size;
+        }
+    }
+
+    // Imagen del carrusel
+    .carousel-item img {
+        height: $carousel-image-height;
+        object-fit: cover;
+        filter: brightness(45%);
+    }
+}
+
+// Estilo del pie de foto del carrusel
+.carousel-caption {
+    right: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -60%);
+    width: $carousel-caption-width;
+    text-align: center;
+}
+
+// Indicadores del carrusel
+.carousel-indicators {
+    bottom: $carousel-indicators-bottom !important;
+
+    // Personalización del indicador activo
+    .active {
+        background-color: $carousel-indicator-active-bg;
+    }
+}
+
+// Estilo general de las imágenes del carrusel
+.carousel-img {
+    min-height: $carousel-image-height;
+    object-fit: cover;
+}

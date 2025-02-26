@@ -1,0 +1,26 @@
+// Base
+
+//Utils
+@import './utils/variables';
+@import './utils/mixins';
+
+//Components
+@import './components/button';
+@import './components/whatsappButtom';
+@import './components/panelSolutions';
+@import './components/panelServicies';
+@import './components/panelPjtMedida';
+@import './components/panelAbout';
+@import './components/cards';
+@import './components/carousel';
+
+// Layout
+@import './layout/heroSection';
+@import './layout/contact';
+@import './layout/footer';
+@import './layout/navbar';
+
+//Page
+@import './pages/home';
+@import './pages/about';
+@import './pages/projects';

@@ -1,0 +1,112 @@
+// Importar variables y mixins necesarios
+@import '../utils/variables';
+@import '../utils/mixins';
+
+// Estilos específicos para la sección "Principio"
+.container-principio {
+    text-align: center;
+    padding: 0 20px;
+
+    h2 {
+        font-size: $title-font-size;
+        margin-bottom: 40px;
+    }
+
+    .container-principio-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 800px;
+        margin: 0 auto;
+
+        .item {
+            background: #fff;
+            padding: $item-padding;
+            border-radius: 12px;
+            box-shadow: $shadow;
+            text-align: center;
+
+            .tam-icon {
+                width: $icon-size;
+                height: auto;
+            }
+
+            h3 {
+                margin: 1rem 0;
+                font-size: 1.3rem;
+            }
+
+            p {
+                margin-top: 1rem;
+                font-size: $paragraph-font-size;
+                color: $text-color-secondary;
+            }
+        }
+    }
+}
+
+// Estilos específicos para la sección "Info"
+.container-info {
+    display: flex;
+    flex-direction: column;
+    gap: $section-gap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .container-section-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $background-light;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: $shadow;
+        margin-bottom: 2rem;
+
+        &.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .container-info-text {
+            flex: 1;
+            padding: 20px;
+
+            h2 {
+                font-size: $subtitle-font-size;
+                color: $text-color;
+                text-align: center;
+            }
+
+            hr {
+                width: 80px;
+                margin: 10px auto;
+                border: none;
+                height: 4px;
+                background-color: $second-color;
+            }
+
+            p {
+                font-size: $paragraph-font-size;
+                color: $text-color-secondary;
+                line-height: 1.6;
+            }
+        }
+
+        .container-section-image {
+            flex: 1;
+            @include flex-center;
+
+            .imagen-info {
+                width: 100%;
+                max-width: $image-max-width;
+                border-radius: 12px;object-fit: cover;
+                transition: transform 0.1s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

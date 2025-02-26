@@ -1,0 +1,107 @@
+// Importar variables y mixins necesarios
+@import '../utils/variables';
+@import '../utils/mixins';
+
+// Estilos específicos del Panel Proyectos a Medida
+.proyectos-a-medida {
+    padding: 0 2rem;
+
+    // Título principal de la sección
+    .section-title {
+        font-size: $title-font-size;
+        margin-bottom: 1rem;
+        color: $text-color;
+    }
+
+    // Subtítulo de la sección
+    .section-subtitle {
+        font-size: $subtitle-font-size;
+        color: darken($text-color, 20%);
+        margin-bottom: 2rem;
+    }
+
+    // Carrusel vertical
+    .vertical-carousel {
+        position: relative;
+        overflow: hidden;
+
+        // Contenedor de diapositivas
+        .slides-container {
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.5s ease;
+            margin-bottom: 2rem;
+
+            // Estilo de cada diapositiva
+            .slide {
+                display: none;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+
+                // Diapositiva activa
+                &.active {
+                    display: flex;
+                    opacity: 1;
+                }
+
+                // Tarjeta dentro de la diapositiva
+                .card {
+                    background: #fff;
+                    border: none;
+                    border-radius: 10px;
+                    box-shadow: $shadow;
+                    padding: $card-padding;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+
+                    // Efecto hover
+                    &:hover {
+                        transform: translateY(-10px);
+                    }
+
+                    // Título de la tarjeta
+                    .card-title {
+                        font-size: $card-title-font-size;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    // Texto de la tarjeta
+                    .card-text {
+                        font-size: $card-text-font-size;
+                        color: darken($text-color, 20%);
+                    }
+                }
+            }
+        }
+
+        // Indicadores del carrusel
+        .indicators {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            display: flex;
+            gap: $carousel-gap;
+
+            // Estilo de cada indicador
+            .indicator {
+                width: $indicator-size;
+                height: $indicator-size;
+                background: #ccc;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: background 0.3s ease;
+
+                // Indicador activo
+                &.active {
+                    background: $primary-color;
+                }
+
+                // Efecto hover
+                &:hover {
+                    background: darken($primary-color, 10%);
+                }
+            }
+        }
+    }
+}

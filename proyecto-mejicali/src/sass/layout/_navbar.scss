@@ -1,0 +1,144 @@
+// Importar variables y mixins necesarios
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.custom-navbar {
+    position: fixed !important;
+    width: 95%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: transparent;
+    transition: background $transition-duration ease-in-out;
+    background-color: $second-color !important;
+    --bs-bg-opacity: 1 !important;
+    margin: 20px 40px !important;
+    padding: 0 !important;
+    border-radius: $border-radius;
+
+    .navbar-brand,
+    .color-link {
+        color: $text-color-light !important;
+    }
+}
+
+.container-fluid-navbar,
+.navbar-collapse {
+    background-color: $second-color;
+    border-radius: $border-radius;
+    padding: $padding-medium;
+    width: 50% !important;
+}
+
+.navbar {
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        li {
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                width: 0;
+                height: 3px;
+                background-color: rgb(217, 217, 217);
+                transition: width $transition-duration ease-in-out, left $transition-duration ease-in-out;
+                transform: translateX(-50%);
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+
+            .color-text {
+                color: black !important;
+            }
+        }
+    }
+}
+
+.language-dropdown {
+    margin-left: auto;
+
+    .btn {
+        @include flex-center;
+        gap: $gap-small-navbar;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: $text-color-light;
+        background-color: transparent;
+        border: 2px solid $text-color-light;
+        border-radius: $border-radius;
+        padding: 0.5rem 1rem;
+        transition: all $transition-duration ease;
+
+        .icon-navbar-lenguaje {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.menu-language {
+    .dropdown-item {
+        &:hover,
+        &:focus {
+            background-color: $second-color;
+            color: $text-color-light;
+        }
+
+        &.active {
+            background-color: $second-color;
+            color: $text-color-light;
+        }
+    }
+}
+
+.dropdown-menu-items {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: none;
+    border-radius: 8px;
+    box-shadow: $shadow-navbar;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all $transition-duration ease;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    li {
+        .dropdown-item {
+            color: gray;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: $gap-small-navbar;
+            font-size: 0.9rem;
+            transition: all $transition-duration ease;
+
+            &:hover {
+                background-color: $second-color;
+                color: $text-color-light;
+            }
+        }
+    }
+}

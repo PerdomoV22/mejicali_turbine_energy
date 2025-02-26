@@ -1,0 +1,43 @@
+// Importar variables y mixins necesarios
+@import '../utils/variables';
+@import '../utils/mixins';
+
+// Estilos generales del Footer
+.container-footer {
+    background-color: $second-color;
+}
+
+// Estilo de los enlaces del Footer
+.color-link-footer {
+    color: $text-color-light;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+
+    // Línea inferior animada
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: $footer-link-line-height;
+        background-color: $text-color-light;
+        transition: width $footer-link-transition-duration ease-in-out;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+// Contenedor interno del Footer
+.container-sub-footer {
+    width: $footer-container-width;
+    margin: 0 auto !important;
+}
+
+// Logo del Footer
+.logo-footer {
+    width: $footer-logo-width;
+}

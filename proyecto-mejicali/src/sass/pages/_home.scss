@@ -1,0 +1,134 @@
+// Importar variables y mixins necesarios
+@import '../utils/variables';
+@import '../utils/mixins';
+
+
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bottom-margin {
+    margin-bottom: 6rem !important;
+}
+
+.container-services {
+    text-align: center;
+
+    hr {
+        width: 10%;
+        height: 2px;
+        margin: 2rem auto 2.5rem;
+        background-color: gray;
+    }
+}
+
+//------------------------- Part-PJT------------------------------
+
+.container-pjt {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 20px;
+    background: linear-gradient(135deg, $second-color, $primary-yellow);
+    border-radius: $border-radius-large;
+}
+
+.card-prin-pjt {
+    border-radius: $border-radius-large !important;
+}
+
+.con-pjt {
+    padding: $padding-large 70px;
+}
+
+.two-column {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.left-column,
+.right-column {
+    width: 50%;
+    padding: $padding-medium-home;
+}
+
+.card-image {
+    width: 50% !important;
+}
+
+.card-link {
+    border-radius: $border-radius-medium !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    box-shadow: $shadow-home;
+    transition: transform $transition-duration ease-in-out, box-shadow $transition-duration ease-in-out;
+    overflow: hidden;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 15px $second-color;
+    }
+
+    .card-title-pjt,
+    .card-text {
+        text-decoration: none !important;
+        color: inherit !important;
+    }
+}
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-medium;
+
+    .title-pjt {
+        color: $text-color-light;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .description-pjt {
+        color: $text-color-light;
+        font-weight: 500;
+    }
+}
+
+.button-card-image {
+    position: absolute;
+    top: 155px;
+    right: 10px;
+    color: rgb(153, 188, 60);
+    border-radius: 50%;
+    width: $button-size;
+    height: $button-size;
+    @include flex-center;
+    text-decoration: none;
+
+    &:hover {
+        color: $second-color;
+    }
+}
+
+.card-body-pjt {
+    text-align: left;
+
+    .card-title-pjt {
+        font-size: 0.7rem;
+    }
+
+    .card-text-pjt {
+        font-size: 1rem;
+    }
+}
