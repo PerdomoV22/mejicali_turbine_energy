@@ -13,7 +13,13 @@
     width: 100%;
 
     > * {
-        max-width: 30% !important; // Limita el ancho de cada tarjeta
+        max-width: 30% !important;
+    }
+
+    @media (max-width: 600px) {
+        > * {
+            max-width: 90% !important; // Cada tarjeta ocupa casi todo el ancho
+        }
     }
 
     .card-about {
@@ -104,4 +110,93 @@
 
 .card-serv {
     border-radius: 2rem !important;
+}
+
+
+// Responsive
+@media (max-width: 768px) {
+    .cards-about {
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 0.5rem;
+    }
+
+    .card-about {
+        max-width: 100% !important; 
+        padding: 1rem !important;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 1rem; 
+        white-space: normal;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .icon {
+        font-size: 3rem !important; 
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .col-sm-6.d-flex {
+        justify-content: center; // Centra horizontalmente
+        display: flex;
+        width: 100%; // Asegura que el contenedor ocupe todo el ancho
+    }
+    
+    .cards-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100% !important;
+        gap: 20px; // Espaciado entre tarjetas
+    }
+
+    .card-about {
+        width: 90% !important; // Que ocupen casi todo el ancho
+        max-width: 900px !important; // Máximo ancho para evitar que se vean demasiado grandes
+        min-height: auto !important; // Evita que el contenido se recorte
+        padding: 20px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    .card-body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        font-size: 2.2rem !important;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    hr {
+        width: 50% !important;
+    }
 }

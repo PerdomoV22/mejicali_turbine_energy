@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect} from "react";
 import Fotoproyecto1 from "../../assets/images/proyecto-gmd-2022.jpg";
 import Serviciosmte from "../../assets/images/servicios-mte.jpg";
 import Fotoproyecto2 from "../../assets/images/proyecto-tula.jpg";
@@ -91,7 +91,7 @@ const Carousel = () => {
                         data-bs-interval="2000"
                     >
                         <img src={slide.image} className="d-block w-100 carousel-img" alt={slide.title} />
-                        <div className="carousel-caption d-none d-md-block">
+                        <div className="carousel-caption d-md-block">
                             <h1>{slide.title}</h1>
                             <p>{slide.description}</p>
                             <Button text={slide.buttonText} to={slide.buttonLink} />

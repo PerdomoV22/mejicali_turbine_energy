@@ -34,14 +34,14 @@ const Footer = () => {
         <footer className="container-fluid container-footer">
             <div className="row container-sub-footer p-5 pb-1 text-white">
                 {/* Logo */}
-                <div className="col-xs-12 col-md-6 col-lg-3">
+                <div className="footer-logo col-12 col-md-6 col-lg-3">
                     <Link to="/">
                         <img className="logo-footer" src={LogoFooter} alt="Logo MTE" />
                     </Link>
                 </div>
                 {/* Secciones dinámicas de enlaces */}
                 {footerLinks.map((section, index) => (
-                    <div key={index} className="col-xs-12 col-md-6 col-lg-3">
+                    <div key={index} className={`col-12 col-md-6 col-lg-3 item item${index + 2}`}>
                         <p className="h3 mb-3">{section.title}</p>
                         {section.links.map((link, i) => (
                             <div key={i} className="mb-2">
@@ -53,7 +53,7 @@ const Footer = () => {
                     </div>
                 ))}
                 {/* Derechos de autor */}
-                <div className="col-xs-12 pt-4">
+                <div className="footer-copy col-12 pt-4">
                     <hr />
                     <p className="text-center text-sm opacity-80">
                         © {new Date().getFullYear()} MTE. Todos los derechos reservados.

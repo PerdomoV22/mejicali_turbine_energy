@@ -27,9 +27,7 @@ export const DefaultLayout = () => {
           })}
         </Routes>
       </div>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
       <WhatsAppButton />
     </>
   );

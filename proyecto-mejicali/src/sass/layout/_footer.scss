@@ -35,9 +35,81 @@
 .container-sub-footer {
     width: $footer-container-width;
     margin: 0 auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 // Logo del Footer
 .logo-footer {
     width: $footer-logo-width;
+    max-width: 150px;
+
+    @media (max-width: 768px) {
+        max-width: 120px;
+    }
+}
+
+// ------------- Responsive -----------
+
+// Ajustes para pantallas medianas-pequeñas
+@media (max-width: 600px) {
+    .container-sub-footer {
+        display: grid;
+        grid-template-areas:
+            "item1 item1"
+            "item2 item3"
+            "item4 item4"
+            "item5 item5";
+    
+        .footer-logo {
+            grid-area: item1;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .item2 {
+            grid-area: item2;
+        }
+    
+        .item3 {
+            grid-area: item3;
+        }
+    
+        .item4 {
+            grid-area: item4;
+        }
+    
+        .footer-copy {
+            grid-area: item5;
+        }
+    
+        .logo-footer {
+            width: 100px;
+            margin-top: 10px;
+        }
+    }
+
+    .p-5 {
+        padding: 0rem !important;
+    }
+
+    .pt-4 {
+        padding-top: 0rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-sub-footer {
+        text-align: center;
+    }
+    
+    .col-12 {
+        padding: 0.8rem;
+    }
+
+    .color-link-footer {
+        font-size: 0.9rem;
+        text-align: left;
+    }
 }
