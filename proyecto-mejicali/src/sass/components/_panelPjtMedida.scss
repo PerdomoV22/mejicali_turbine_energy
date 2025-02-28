@@ -105,3 +105,79 @@
         }
     }
 }
+
+// --------------- Responsive ------------------
+
+// Tablets
+@media screen and (max-width: 768px) {
+    .proyectos-a-medida {
+        padding: 0 1.5rem;
+
+        .section-title {
+            font-size: 1.8rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+        }
+
+        .vertical-carousel {
+            .slides-container {
+                .slide {
+                    flex-direction: column; // Apila los elementos verticalmente
+                    align-items: center;
+
+                    .row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 20px;
+
+                        .col-md-3 {
+                            flex: 1 1 calc(50% - 20px); // Muestra dos tarjetas por fila
+                            max-width: calc(50% - 20px);
+                        }
+                    }
+                }
+            }
+
+            .indicators {
+                bottom: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .proyectos-a-medida {
+        padding: 0 1rem;
+
+        .section-title {
+            font-size: 1.6rem;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+        }
+
+        .vertical-carousel {
+            .slides-container {
+                .slide {
+                    .row {
+                        flex-direction: column; // Apila las tarjetas en una sola columna
+
+                        .col-md-3 {
+                            flex: 1 1 100%;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .indicators {
+                bottom: 10px;
+                gap: 8px;
+            }
+        }
+    }
+}

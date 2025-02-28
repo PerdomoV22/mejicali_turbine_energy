@@ -15,9 +15,8 @@ const ProjectScope = ({srcImage, dataProjectScope, dataProjectMoreScope}) => {
                 <ul className="scope-list">
                     {dataProjectScope.map((item, index) => (
                         <li key={index} className="scope-item">
-                        <span className="text">
                             <FaCheckSquare className="icon" />
-                            </span > {item}
+                            <span className="text">{item}</span > 
                         </li>
                     ))}
                 </ul>

@@ -40,7 +40,7 @@
 .collage {
     display: flex;
     justify-content: center;
-    gap: 1px;
+    gap: 5px;
     margin-bottom: 3rem;
 
     &__image {
@@ -53,15 +53,7 @@
         transform: scale(1.05);
         }
     }
-
-    @media (max-width: 768px) {
-        flex-direction: column;
-
-        &__image {
-        width: 100%;
-        }
-    }
-    }
+}
 
 //-------------- Project Card Info --------------
 .panel-info-projects {
@@ -108,18 +100,6 @@
     &__item-description {
         font-size: $subtitle-font-size;
         color: $text-color-secondary;
-    }
-
-    @media (max-width: 768px) {
-        &__grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    @media (max-width: 500px) {
-        &__grid {
-            grid-template-columns: repeat(1, 1fr);
-        }
     }
 }
 
@@ -260,6 +240,7 @@
                 .icon {
                     color: $second-green;
                     margin-right: 20px;
+                    flex-shrink: 0;
                 }
             }
         }
@@ -283,6 +264,260 @@
             &:hover {
                 transform: scale(1.05);
             }
+        }
+    }
+}
+
+// ------------------- Responsive -------------------------------
+
+// Tablet
+@media screen and (max-width: 768px) {
+
+    // Project card
+    .about {
+        width: 95%;
+        padding: 2rem $padding-medium;
+
+        &__title {
+            font-size: 1.6rem;
+        }
+
+        &__subtitle {
+            font-size: 1.2rem;
+        }
+
+        &__description {
+            font-size: 1rem;
+            max-width: 600px;
+        }
+    }
+
+    //Collage
+    .collage{
+        gap: 3px; 
+        margin-bottom: 1.5rem;
+
+        &__image {
+            width: calc(33.33% - 3px); 
+        }
+    }
+
+    //  Project Card Info
+    .panel-info-projects {
+
+        &__icon {
+            font-size: 2.5rem;
+        }
+
+        &__title {
+            font-size: 1.6rem;
+        }
+
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__item-description {
+            font-size: 1rem;;
+        }
+    }
+
+    //-------------- Project Info icons --------------
+    .highlight {
+        width: 90%;
+    }
+
+    //-------------- Project detalles del proyecto --------------
+    .project-details {
+        gap: 2rem;
+        flex-direction: column;
+
+        .content {
+            max-width: 80%;
+
+            .details-list {
+                display: flex !important;
+                flex-direction: column;
+                align-items: flex-start
+            }
+    
+            .title {
+                text-align: center;
+            }
+    
+            .icon {
+                font-size: 2rem !important;
+            }
+        }
+
+        .image-container {
+            max-width: 80%;
+        }
+    }
+
+    // -------------- Project alcance del proyecto --------------
+    .project-scope {
+        gap: 2rem;
+        flex-direction: column;
+        
+        .content {
+            max-width: 80%;
+
+            .scope-list {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start
+            }
+
+            .title {
+                text-align: center;
+            }
+    
+            .icon {
+                font-size: 2rem !important;
+            }
+        }
+    }
+}
+
+// Celular 
+@media screen and (max-width: 600px) {
+
+    // Project card
+    .about {
+        &__title {
+            font-size: 1.4rem;
+        }
+
+        &__subtitle {
+            font-size: 1rem;
+        }
+
+        &__divider {
+            width: 90%;
+        }
+
+        &__description {
+            font-size: 0.95rem;
+            max-width: 100%;
+            line-height: 1.4;
+        }
+    }
+
+    // Collage
+    .collage {
+        gap: 2px; // Menos separación en móviles
+        margin-bottom: 1rem;
+
+        &__image {
+            width: calc(33.33% - 2px); // Se mantiene el layout horizontal con ajustes mínimos
+        }
+    }
+
+    // Project Card Info
+    .panel-info-projects {
+
+        &__icon {
+            font-size: 2rem;
+        }
+
+        &__title {
+            font-size: 1.4rem;
+        }
+
+        &__grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__item {
+            padding: 10px;
+        }
+
+        &__item-description {
+            font-size: 0.95rem;
+        }
+    }
+
+    //-------------- Project Info icons --------------
+    .highlight {
+        padding: 2rem $padding-medium;
+
+        &__stats {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__stat{
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        &__stat {
+            padding: 1rem;
+        }
+
+        &__title {
+            font-size: 1.4rem;
+        }
+
+        &__text {
+            font-size: 0.95rem;
+        }
+    }
+
+    //-------------- Project detalles del proyecto --------------
+    .project-details {
+        padding: 20px;
+
+        .content {
+            max-width: 80%;
+
+            .title {
+                font-size: 1.4rem;
+            }
+
+            .icon {
+                font-size: 1.6rem !important; 
+                flex-shrink: 0;
+
+            }
+    
+            .text {
+                flex-grow: 1; // Permite que el texto ocupe el resto del espacio
+                display: flex;
+                align-items: center; // Asegura alineación vertical con el ícono
+            }
+        }
+
+        .image-container {
+            max-width: 80%;
+        }
+    }
+
+    // -------------- Project alcance del proyecto --------------   
+    .project-scope {
+        padding: 20px;
+
+        .content {
+            max-width: 80%;
+
+            .title {
+                font-size: 1.4rem;
+            }
+
+            .icon {
+                font-size: 1.6rem;
+            }
+
+            .text {
+                flex-grow: 1; // Permite que el texto ocupe el resto del espacio
+                display: flex;
+                align-items: center; // Asegura alineación vertical con el ícono
+            }
+        }
+
+        .image {
+            max-height: 250px;
         }
     }
 }

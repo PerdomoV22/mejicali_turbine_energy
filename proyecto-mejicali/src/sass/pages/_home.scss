@@ -132,3 +132,93 @@
         font-size: 1rem;
     }
 }
+
+// ------------ Responsive ---------------
+
+@media screen and (max-width: 768px) {
+
+    .title-pjt {
+        font-size: 1.8rem !important;
+    }
+
+    .description-pjt {
+        font-size: 1.2rem !important;
+    }
+
+    .con-pjt {
+        padding: 30px 35px;
+    }
+
+    .two-column {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-image {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .title-pjt {
+        font-size: 1.4rem !important;
+    }
+
+    .description-pjt {
+        font-size: 1.1rem !important;
+    }
+
+    .con-pjt {
+        padding: 30px 35px;
+    }
+
+    .container-pjt {
+        width: 85%;
+        padding: 10px;
+    }
+
+    .con-pjt {
+        padding: 20px;
+    }
+
+    .container-cards-info {
+        flex-direction: column;
+    }
+
+
+    .left-column .title-pjt {
+        font-size: 1.5rem;
+    }
+
+    .left-column .description-pjt {
+        font-size: 1rem;
+    }
+
+    .card-image {
+        width: 80% !important;
+        margin: 10px auto;
+    }
+
+    .card-img-top {
+        height: 120px;
+    }
+
+    .button-card-image {
+        top: 120px;
+        right: 5px;
+    }
+}

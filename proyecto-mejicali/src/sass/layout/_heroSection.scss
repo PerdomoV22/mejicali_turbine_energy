@@ -41,3 +41,43 @@
         font-size: $hero-paragraph-font-size;
     }
 }
+
+// -------------- Responsive --------------------
+
+@media screen and (max-width: 768px) {
+    .hero-image {
+        height: 500px; // Reducir la altura en tablets
+    }
+
+    .hero-text {
+        width: 80%; // Ajustar el ancho del texto
+        padding: 15px;
+
+        h1 {
+            font-size: 2rem; // Reducir tamaño del título
+        }
+
+        p {
+            font-size: 1.2rem; // Reducir tamaño del párrafo
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-image {
+        height: 480px; // Reducir más la altura en móviles
+    }
+
+    .hero-text {
+        width: 90%;
+        padding: 10px;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}

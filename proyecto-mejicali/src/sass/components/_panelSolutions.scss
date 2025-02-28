@@ -51,3 +51,63 @@
         }
     }
 }
+
+// -------------- Responsive ---------------
+
+// Tablets
+@media screen and (max-width: 768px) {
+    .energy-solutions {
+        padding: 40px 20px; // Reduce el padding en tabletas
+
+        .section-title {
+            font-size: 1.8rem; // Reduce tamaño del título
+        }
+
+        .cards-container {
+            gap: 20px; // Reduce el espacio entre tarjetas
+
+            .card {
+                .solution-icon {
+                    font-size: 1.8rem; // Reduce tamaño de icono
+                }
+
+                h3 {
+                    font-size: 1.2rem; // Ajusta tamaño del título
+                }
+
+                p {
+                    font-size: 1rem; // Ajusta tamaño del texto
+                }
+            }
+        }
+    }
+}
+
+// Celulares
+@media screen and (max-width: 600px) {
+    .energy-solutions {
+        padding: 30px 15px;
+
+        .section-title {
+            font-size: 1.5rem;
+        }
+
+        .cards-container {
+            gap: 15px;
+
+            .card {
+                .solution-icon {
+                    font-size: 1.5rem; // Ajusta tamaño de icono
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 0.9rem; // Reduce el tamaño del texto
+                }
+            }
+        }
+    }
+}

@@ -149,3 +149,82 @@
         }
     }
 }
+
+// --------------- Responsive ------------- 
+
+// Tablets
+@media (max-width: 768px) {    
+
+    .mt-5 {
+        margin-top: 0 !important;
+    }
+
+    .container-division-top p { // Asumiendo que description es un <p>
+        padding: 0 4rem 1rem;
+    }
+
+    .contacto-container {
+        flex-direction: column; // Para que los elementos se apilen verticalmente
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .contacto-info {
+        width: 90%; // Para que no ocupe todo el ancho
+        text-align: center;
+        margin: 1rem;
+        align-items: center;
+    }
+
+    .contacto-formulario {
+        width: 90%;
+        top: 0 !important; 
+        left: 0 !important;
+        padding: 20px;
+    }
+
+}
+
+// Celulares
+@media (max-width: 600px) {
+
+    .mt-5 {
+        margin-top: 0 !important;
+    }
+
+    .container-division-top h2 { // Asumiendo que title es un <h2>
+        font-size: 1.2rem;
+        padding: 0 2rem;
+    }
+    
+    .container-division-top p { // Asumiendo que description es un <p>
+        font-size: 0.9rem;
+        padding: 0 2rem 1rem;
+    }
+
+    .contacto-info {
+        padding: 15px;
+        margin: 0.5rem;
+    }
+
+    .contacto-formulario {
+        padding: 15px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .contacto-formulario form .row {
+        flex-direction: column; // Poner los inputs en una sola columna
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

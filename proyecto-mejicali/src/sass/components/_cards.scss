@@ -90,6 +90,10 @@
         transition: box-shadow 0.2s ease;
         border-radius: 2rem !important;
     }
+
+    .card-text-servicies {
+        padding-top: 1rem;
+    }
 }
 
 .card-cabeza-servicies {
@@ -115,6 +119,18 @@
 
 // Responsive
 @media (max-width: 768px) {
+
+    // Card de home parte de servicios
+    .card-title-servicies {
+        font-size: 1.5rem;
+        text-align: left !important;
+    }
+
+    .card-text-servicies {
+        font-size: 1.05rem;
+    }
+
+    // Cards de home cards sobre posicion de carousel
     .cards-about {
         flex-wrap: wrap;
         justify-content: center; 
@@ -145,6 +161,13 @@
 }
 
 @media (max-width: 600px) {
+
+    // Card de home parte de servicios
+    .cards-servicies{
+        gap: 1rem;
+    }
+
+    // Cards de home cards sobre posicion de carousel
     .col-sm-6.d-flex {
         justify-content: center; // Centra horizontalmente
         display: flex;
@@ -177,7 +200,6 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .icon {
@@ -188,7 +210,6 @@
 
     .card-title {
         font-size: 1.4rem;
-        text-align: center;
     }
 
     .card-text {

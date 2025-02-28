@@ -68,3 +68,79 @@
         }
     }
 }
+
+// -------------- Responsive ---------------------
+@media screen and (max-width: 768px) {
+    .download-section {
+        padding: 30px 15px; // Reduce el padding en tabletas
+
+        .download-header {
+            max-width: 90%; // Ajusta el ancho del encabezado
+            margin-bottom: 20px;
+
+            h2 {
+                font-size: 1.8rem; // Reduce tamaño del título
+            }
+
+            p {
+                font-size: 1rem; // Ajusta tamaño del párrafo
+            }
+        }
+
+        .steps-container {
+            gap: 20px; // Espacio entre elementos
+
+            .step-circle {
+                max-width: 220px; // Aumenta el tamaño para mejor legibilidad
+
+                .circle {
+                    width: 70px; // Ajusta tamaño del círculo
+                    height: 70px;
+                    font-size: 1.3rem;
+                }
+
+                p {
+                    font-size: 1rem; // Ajusta el tamaño del texto
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .download-section {
+        padding: 20px 10px;
+
+        .download-header {
+            max-width: 100%;
+            text-align: center;
+
+            h2 {
+                font-size: 1.5rem; // Reduce el tamaño del título para móviles
+            }
+
+            p {
+                font-size: 0.9rem; // Reduce un poco más el tamaño del párrafo
+                line-height: 1.4;
+            }
+        }
+
+        .steps-container {
+            gap: 15px;
+
+            .step-circle {
+                max-width: 200px; // Reduce el tamaño del paso
+
+                .circle {
+                    width: 60px;
+                    height: 60px;
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 0.9rem; // Reduce tamaño del texto
+                }
+            }
+        }
+    }
+}

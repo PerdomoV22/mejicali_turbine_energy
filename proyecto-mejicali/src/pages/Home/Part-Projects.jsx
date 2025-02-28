@@ -52,7 +52,7 @@ const PartProjects = () => {
 
                         {/* Columna Derecha */}
                         <div className="right-column">
-                            <div className="row row-cols-1 row-cols-md-3 g-4">
+                            <div className="row row-cols-1 row-cols-md-3 g-4 container-cards-info">
                                 {projectsData.map((project) => (
                                     <ProjectItem key={project.id} {...project} />
                                 ))}

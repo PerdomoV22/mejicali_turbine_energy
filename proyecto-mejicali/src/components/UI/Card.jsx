@@ -10,7 +10,7 @@ const Card = ({ title, description, to }) => {
                         <MdEnergySavingsLeaf className="card-icon"/>
                         <h5 className="card-title-servicies">{title}</h5>
                     </div>
-                    <p className="card-text">{description}</p>
+                    <p className="card-text-servicies">{description}</p>
                     <Button text="Más información" to={to} /> 
                 </div>
             </div>            
