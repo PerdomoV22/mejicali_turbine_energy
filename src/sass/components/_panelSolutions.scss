@@ -1,18 +1,18 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use '../utils/variables';
+@use '../utils/mixins';
 
 // Estilos específicos del Panel Solutions
 .energy-solutions {
-    padding: $section-padding;
-    background: $background-color;
+    padding: variables.$section-padding;
+    background: variables.$background-color;
     text-align: center;
 
     // Título de la sección
     .section-title {
-        font-size: $title-font-size;
-        margin-bottom: $section-padding;
-        color: $text-color;
+        font-size: variables.$title-font-size;
+        margin-bottom: variables.$section-padding;
+        color: variables.$text-color;
     }
 
     // Contenedor de tarjetas
@@ -20,32 +20,32 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: $card-gap;
+        gap: variables.$card-gap;
 
         // Estilo de cada tarjeta
         .card {
             background: #fff;
             border-radius: 10px;
-            box-shadow: $shadow;
-            padding: $card-padding;
-            width: $card-width;
+            box-shadow: variables.$shadow;
+            padding: variables.$card-padding;
+            width: variables.$card-width;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
 
             // Efecto hover
             &:hover {
-                transform: translateY($card-hover-translate);
+                transform: translateY(variables.$card-hover-translate);
                 box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
             }
 
             // Título de la tarjeta
             h3 {
-                font-size: $card-title-font-size;
+                font-size: variables.$card-title-font-size;
                 margin-bottom: 1rem;
             }
 
             // Ícono de la solución
             .solution-icon {
-                font-size: $icon-font-size;
+                font-size: variables.$icon-font-size;
                 margin-bottom: 1rem;
             }
         }

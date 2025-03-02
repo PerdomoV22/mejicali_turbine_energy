@@ -1,22 +1,22 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use '../utils/variables';
+@use '../utils/mixins';
 
 //-------------- Project Card --------------
 .about {
     text-align: center;
-    padding: $padding-large;
-    color: $text-color;
+    padding: variables.$padding-large;
+    color: variables.$text-color;
     margin-top: 0.7rem;
 
     &__title {
-        font-size: $title-font-size;
+        font-size: variables.$title-font-size;
         font-weight: bold;
         margin-bottom: 5px;
     }
 
     &__subtitle {
-        font-size: $subtitle-font-size;
+        font-size: variables.$subtitle-font-size;
         color: gray;
         margin-bottom: 20px;
     }
@@ -59,15 +59,15 @@
 .panel-info-projects {
     text-align: center;
     padding: 50px;
-    color: $text-color;
+    color: variables.$text-color;
 
     &__title {
-        font-size: $title-font-size;
+        font-size: variables.$title-font-size;
         font-weight: bold;
         margin-bottom: 20px;
 
         span {
-            color: $second-color;
+            color: variables.$second-color;
         }
     }
 
@@ -87,58 +87,58 @@
 
     &__icon {
         font-size: 40px;
-        color: $second-color;
+        color: variables.$second-color;
         margin-bottom: 15px;
     }
 
     &__item-title {
-        font-size: $item-font-size;
+        font-size: variables.$item-font-size;
         font-weight: bold;
         margin-bottom: 10px;
     }
 
     &__item-description {
-        font-size: $subtitle-font-size;
-        color: $text-color-secondary;
+        font-size: variables.$subtitle-font-size;
+        color: variables.$text-color-secondary;
     }
 }
 
 //-------------- Project Info icons --------------
 .highlight {
-    background: linear-gradient(135deg, $second-color, $primary-yellow);
-    color: $text-color-light;
-    padding: $padding-large;
+    background: linear-gradient(135deg, variables.$second-color, variables.$primary-yellow);
+    color: variables.$text-color-light;
+    padding: variables.$padding-large;
     text-align: center;
     border-radius: 15px;
-    box-shadow: $shadow-projects;
+    box-shadow: variables.$shadow-projects;
 }
 
 .highlight__title {
-    font-size: $title-font-size;
+    font-size: variables.$title-font-size;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
 .highlight__text span {
     font-weight: bold;
-    color: $primary-yellow;
+    color: variables.$primary-yellow;
 }
 
 .highlight__stats {
     display: flex;
     justify-content: center;
-    gap: $gap-medium;
+    gap: variables.$gap-medium;
     margin: 2rem 0;
 }
 
 .highlight__stat {
-    background: $second-gray;
+    background: variables.$second-gray;
     padding: 1rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform $transition-duration ease;
+    transition: transform variables.$transition-duration ease;
 }
 
 .highlight__stat:hover {
@@ -146,7 +146,7 @@
 }
 
 .highlight__icon {
-    font-size: $title-font-size;
+    font-size: variables.$title-font-size;
     margin-bottom: 0.5rem;
 }
 
@@ -161,7 +161,7 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    background-color: $background-color;
+    background-color: variables.$background-color;
     padding: 40px;
     border-radius: 10px;
 
@@ -169,7 +169,7 @@
         max-width: 50%;
 
         .title {
-            font-size: $title-font-size;
+            font-size: variables.$title-font-size;
             font-weight: bold;
             margin-bottom: 20px;
         }
@@ -181,11 +181,11 @@
             .detail-item {
                 display: flex;
                 align-items: center;
-                font-size: $item-font-size;
+                font-size: variables.$item-font-size;
                 margin-bottom: 10px;
 
                 .icon {
-                    color: $second-green;
+                    color: variables.$second-green;
                     margin-right: 20px;
                 }
             }
@@ -199,7 +199,7 @@
             width: 100%;
             border-radius: 10px;
             object-fit: cover;
-            transition: transform $transition-duration ease-in-out;
+            transition: transform variables.$transition-duration ease-in-out;
 
             &:hover {
                 transform: scale(1.05);
@@ -214,7 +214,7 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    background-color: $background-color;
+    background-color: variables.$background-color;
     padding: 40px;
     border-radius: 10px;
 
@@ -222,7 +222,7 @@
         max-width: 50%;
 
         .title {
-            font-size: $title-font-size;
+            font-size: variables.$title-font-size;
             font-weight: bold;
             margin-bottom: 20px;
         }
@@ -234,11 +234,11 @@
             .scope-item {
                 display: flex;
                 align-items: center;
-                font-size: $item-font-size;
+                font-size: variables.$item-font-size;
                 margin-bottom: 20px;
 
                 .icon {
-                    color: $second-green;
+                    color: variables.$second-green;
                     margin-right: 20px;
                     flex-shrink: 0;
                 }
@@ -246,7 +246,7 @@
         }
 
         p {
-            font-size: $item-font-size;
+            font-size: variables.$item-font-size;
             margin-top: 10px;
         }
     }
@@ -259,7 +259,7 @@
             border-radius: 10px;
             height: 400px;
             object-fit: cover;
-            transition: transform $transition-duration ease-in-out;
+            transition: transform variables.$transition-duration ease-in-out;
 
             &:hover {
                 transform: scale(1.05);
@@ -276,7 +276,7 @@
     // Project card
     .about {
         width: 95%;
-        padding: 2rem $padding-medium;
+        padding: 2rem variables.$padding-medium;
 
         &__title {
             font-size: 1.6rem;
@@ -440,7 +440,7 @@
 
     //-------------- Project Info icons --------------
     .highlight {
-        padding: 2rem $padding-medium;
+        padding: 2rem variables.$padding-medium;
 
         &__stats {
             display: flex;

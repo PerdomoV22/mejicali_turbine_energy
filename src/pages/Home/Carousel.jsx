@@ -2,7 +2,7 @@ import { useEffect} from "react";
 import Fotoproyecto1 from "../../assets/images/proyecto-gmd-2022.jpg";
 import Serviciosmte from "../../assets/images/servicios-mte.jpg";
 import Fotoproyecto2 from "../../assets/images/proyecto-tula.jpg";
-import Button from "../../components/UI/buttton";
+import Button from "../../components/UI/Buttton";
 
 const slides = [
     {
@@ -47,24 +47,19 @@ const Carousel = () => {
     
     //const carouselRef  = useRef(null);
 
+    // Importación dinámica del JavaScript de Bootstrap
     useEffect(() => {
-        const initializeCarousel = () => {
-            const carouselElement = document.getElementById("carouselExampleCaptions");
-            if (carouselElement && window.bootstrap) {
-                    const carousel = new window.bootstrap.Carousel(carouselElement, {
-                    interval: 25000, // Cambia cada 5 segundos
-                    ride: "carousel", // Activa el modo automático
-                });
-                // Forzar la inicialización del primer ítem
-                carousel.to(0); // Asegura que el primer ítem sea visible
-            } else {
-                console.error("Bootstrap Carousel no está disponible.");
+        // Importación dinámica del JavaScript de Bootstrap
+        import('bootstrap/js/dist/carousel').then(({ default: Carousel }) => {
+            const carouselElement = document.querySelector('#carouselExampleCaptions');
+            if (carouselElement) {
+              new Carousel(carouselElement, {
+                interval: 2000, // Tiempo en milisegundos para la navegación automática
+                ride: 'carousel', // Habilita la navegación automática
+              });
             }
-        };
-    
-        // Espera un breve momento para asegurar que Bootstrap esté cargado
-        setTimeout(initializeCarousel, 5000);
-    }, []);
+        });
+      }, []);
 
     return (
         <div id="carouselExampleCaptions" className="carousel slide carousel-home" data-bs-ride="carousel">

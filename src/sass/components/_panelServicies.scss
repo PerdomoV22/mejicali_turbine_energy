@@ -1,27 +1,27 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use '../utils/variables';
+@use '../utils/mixins';
 
 // Estilos específicos del Panel Services
 .download-section {
     text-align: center;
-    padding: $section-padding 20px;
-    background-color: $background-color;
+    padding: variables.$section-padding 20px;
+    background-color: variables.$background-color;
 
     // Encabezado de la sección
     .download-header {
-        max-width: $header-max-width;
+        max-width: variables.$header-max-width;
         margin: 0 auto 30px auto;
 
         h2 {
-            font-size: $title-font-size;
-            color: $text-color;
+            font-size: variables.$title-font-size;
+            color: variables.$text-color;
             margin-bottom: 1rem;
         }
 
         p {
-            font-size: $subtitle-font-size;
-            color: $text-color-secondary;
+            font-size: variables.$subtitle-font-size;
+            color: variables.$text-color-secondary;
             line-height: 1.5;
         }
     }
@@ -30,7 +30,7 @@
     .steps-container {
         display: flex;
         justify-content: center;
-        gap: $step-gap;
+        gap: variables.$step-gap;
         flex-wrap: wrap;
     }
 
@@ -43,27 +43,27 @@
 
         // Círculo del paso
         .circle {
-            width: $circle-size;
-            height: $circle-size;
-            background-color: $primary-color;
+            width: variables.$circle-size;
+            height: variables.$circle-size;
+            background-color: variables.$primary-color;
             color: white;
             font-size: 1.5rem;
             font-weight: bold;
-            @include flex-center;
+            @include mixins.flex-center;
             border-radius: 50%;
             margin-bottom: 10px;
         }
 
         // Título del paso
         h3 {
-            font-size: $subtitle-font-size;
-            color: $text-color;
+            font-size: variables.$subtitle-font-size;
+            color: variables.$text-color;
         }
 
         // Descripción del paso
         p {
-            font-size: $description-font-size;
-            color: $text-color-secondary;
+            font-size: variables.$description-font-size;
+            color: variables.$text-color-secondary;
             text-align: center;
         }
     }

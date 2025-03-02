@@ -1,15 +1,15 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use '../utils/variables';
+@use '../utils/mixins';
 
 // Estilos específicos del Panel About
 .container-panel {
     background-color: white;
-    padding: $panel-padding;
+    padding: variables.$panel-padding;
     border-radius: 100px 100px 0 0;
     max-width: 80%;
     margin: -50px auto 0;
-    box-shadow: $shadow;
+    box-shadow: variables.$shadow;
     text-align: center;
     position: relative;
 
@@ -17,7 +17,7 @@
     .container-panel-info {
         display: flex;
         justify-content: space-between;
-        gap: $column-gap;
+        gap: variables.$column-gap;
         margin-bottom: 1.5rem;
 
         .container-colunm {
@@ -44,16 +44,16 @@
         justify-content: space-evenly;
 
         .card-column {
-            width: $card-width-about; 
-            height: $card-height;
+            width: variables.$card-width-about; 
+            height: variables.$card-height;
             border-radius: 15px;
             text-align: center;
             padding: 20px;
-            transition: all $transition-duration ease-in-out;
+            transition: all variables.$transition-duration ease-in-out;
             position: relative;
             overflow: hidden;
             background-color: white;
-            box-shadow: $shadow;
+            box-shadow: variables.$shadow;
 
             .card-icon, .card-title {
                 margin: 1rem auto;
@@ -62,7 +62,7 @@
             .card-title {
                 font-size: 1.5rem;
                 font-weight: 400;
-                transition: color $transition-duration ease-in-out;
+                transition: color variables.$transition-duration ease-in-out;
             }
 
             &:hover {
@@ -77,8 +77,8 @@
             }
 
             .icon-panel {
-                width: $icon-size;
-                height: $icon-size;
+                width: variables.$icon-size;
+                height: variables.$icon-size;
                 transition: all 0.3s ease-in-out;
             }
         }
@@ -86,11 +86,11 @@
         .card-column:nth-child(1) {
             .icon-panel,
             .card-title {
-                color: $primary-green;
+                color: variables.$primary-green;
             }
 
             &:hover {
-                background-color: $primary-green;
+                background-color: variables.$primary-green;
 
                 .icon-panel,
                 .card-title {
@@ -102,11 +102,11 @@
         .card-column:nth-child(2) {
             .icon-panel,
             .card-title {
-                color: $primary-yellow;
+                color: variables.$primary-yellow;
             }
 
             &:hover {
-                background-color: $primary-yellow;
+                background-color: variables.$primary-yellow;
 
                 .icon-panel,
                 .card-title {
@@ -118,11 +118,11 @@
         .card-column:nth-child(3) {
             .icon-panel,
             .card-title {
-                color: $primary-gray;
+                color: variables.$primary-gray;
             }
 
             &:hover {
-                background-color: $primary-gray;
+                background-color: variables.$primary-gray;
 
                 .icon-panel,
                 .card-title {

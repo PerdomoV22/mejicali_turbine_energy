@@ -1,6 +1,6 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use '../utils/variables';
+@use '../utils/mixins';
 
 // Estilos específicos del Hero Section
 .container-hero-section {
@@ -11,7 +11,7 @@
 .hero-image {
     position: relative;
     width: 100%;
-    height: $hero-section-height;
+    height: variables.$hero-section-height;
 
     .img-hero-section {
         width: 100%;
@@ -27,18 +27,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: $text-color-light;
-    padding: $padding-base;
+    color: variables.$text-color-light;
+    padding: variables.$padding-base;
     border-radius: 10px;
-    width: $hero-text-width;
+    width: variables.$hero-text-width;
 
     h1 {
-        font-size: $hero-title-font-size;
+        font-size: variables.$hero-title-font-size;
         margin-bottom: 10px;
     }
 
     p {
-        font-size: $hero-paragraph-font-size;
+        font-size: variables.$hero-paragraph-font-size;
     }
 }
 

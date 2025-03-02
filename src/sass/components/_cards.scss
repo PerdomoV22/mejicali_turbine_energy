@@ -1,6 +1,6 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use '../utils/variables';
+@use '../utils/mixins';
 
 // Estilos específicos para las tarjetas "About"
 .cards-about {
@@ -23,16 +23,16 @@
     }
 
     .card-about {
-        padding: $card-padding;
-        box-shadow: $shadow;
+        padding: variables.$card-padding;
+        box-shadow: variables.$shadow;
         position: relative;
         transition: all 0.3s ease-in-out;
         border: 2px solid transparent;
 
         // Ícono de la tarjeta
         .icon {
-            font-size: $icon-size-large;
-            color: $second-color;
+            font-size: variables.$icon-size-large;
+            color: variables.$second-color;
         }
 
         // Espaciado entre elementos
@@ -65,12 +65,12 @@
 
 // Efecto hover para las tarjetas "About"
 .card-about:hover {
-    border-color: $second-color;
+    border-color: variables.$second-color;
     transform: translateY(-5px);
 
     hr {
         width: 60%;
-        background-color: $second-color;
+        background-color: variables.$second-color;
     }
 }
 
@@ -86,7 +86,7 @@
 
     // Efecto hover para las tarjetas "Services"
     &:hover {
-        box-shadow: 0 0 20px $second-color;
+        box-shadow: 0 0 20px variables.$second-color;
         transition: box-shadow 0.2s ease;
         border-radius: 2rem !important;
     }
@@ -102,8 +102,8 @@
 
     // Ícono de la tarjeta "Services"
     .card-icon {
-        font-size: $icon-size-medium;
-        color: $primary-color;
+        font-size: variables.$icon-size-medium;
+        color: variables.$primary-color;
     }
 }
 

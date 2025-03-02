@@ -1,4 +1,4 @@
-import Button from "./buttton";
+import Button from "./Buttton";
 import { MdEnergySavingsLeaf } from "react-icons/md";
 
 const Card = ({ title, description, to }) => {

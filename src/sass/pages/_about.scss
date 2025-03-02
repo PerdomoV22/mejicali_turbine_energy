@@ -1,6 +1,6 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use '../utils/variables';
+@use '../utils/mixins';
 
 // Estilos específicos para la sección "Principio"
 .container-principio {
@@ -8,7 +8,7 @@
     padding: 0 20px;
 
     h2 {
-        font-size: $title-font-size;
+        font-size: variables.$title-font-size;
         margin-bottom: 40px;
     }
 
@@ -21,13 +21,13 @@
 
         .item {
             background: #fff;
-            padding: $item-padding;
+            padding: variables.$item-padding;
             border-radius: 12px;
-            box-shadow: $shadow;
+            box-shadow: variables.$shadow;
             text-align: center;
 
             .tam-icon {
-                width: $icon-size;
+                width: variables.$icon-size;
                 height: auto;
             }
 
@@ -38,8 +38,8 @@
 
             p {
                 margin-top: 1rem;
-                font-size: $paragraph-font-size;
-                color: $text-color-secondary;
+                font-size: variables.$paragraph-font-size;
+                color: variables.$text-color-secondary;
             }
         }
     }
@@ -49,7 +49,7 @@
 .container-info {
     display: flex;
     flex-direction: column;
-    gap: $section-gap;
+    gap: variables.$section-gap;
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
@@ -58,10 +58,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: $background-light;
+        background: variables.$background-light;
         padding: 30px;
         border-radius: 12px;
-        box-shadow: $shadow;
+        box-shadow: variables.$shadow;
         margin-bottom: 2rem;
 
         &.reverse {
@@ -73,8 +73,8 @@
             padding: 20px;
 
             h2 {
-                font-size: $subtitle-font-size;
-                color: $text-color;
+                font-size: variables.$subtitle-font-size;
+                color: variables.$text-color;
                 text-align: center;
             }
 
@@ -83,23 +83,23 @@
                 margin: 10px auto;
                 border: none;
                 height: 4px;
-                background-color: $second-color;
+                background-color: variables.$second-color;
             }
 
             p {
-                font-size: $paragraph-font-size;
-                color: $text-color-secondary;
+                font-size: variables.$paragraph-font-size;
+                color: variables.$text-color-secondary;
                 line-height: 1.6;
             }
         }
 
         .container-section-image {
             flex: 1;
-            @include flex-center;
+            @include mixins.flex-center;
 
             .imagen-info {
                 width: 100%;
-                max-width: $image-max-width;
+                max-width: variables.$image-max-width;
                 border-radius: 12px;object-fit: cover;
                 transition: transform 0.1s ease-in-out;
 

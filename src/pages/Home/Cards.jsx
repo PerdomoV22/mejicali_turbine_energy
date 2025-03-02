@@ -1,6 +1,6 @@
 import { FaBuilding, FaTools, FaHandshake } from "react-icons/fa";
 import { JackInTheBox } from "react-awesome-reveal";
-import Button from "../../components/UI/buttton";
+import Button from "../../components/UI/Buttton";
 
 // Datos de las tarjetas
 const cardsData = [

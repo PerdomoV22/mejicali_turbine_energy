@@ -1,19 +1,19 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use '../utils/variables';
+@use '../utils/mixins';
 
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
 
-    background-color: $whatsapp-green;
+    background-color: variables.$whatsapp-green;
     color: white;
     font-size: 28px;
-    width: $whatsapp-button-size;
-    height: $whatsapp-button-size;
+    width: variables.$whatsapp-button-size;
+    height: variables.$whatsapp-button-size;
 
-    @include flex-center;
+    @include mixins.flex-center;
     
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -24,6 +24,6 @@
 
     &:hover {
         transform: scale(1.1);
-        background-color: $whatsapp-green-hover;
+        background-color: variables.$whatsapp-green-hover;
     }
 }

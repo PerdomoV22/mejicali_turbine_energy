@@ -1,6 +1,6 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use '../utils/variables';
+@use '../utils/mixins';
 
 
 .max-width {
@@ -31,16 +31,16 @@
     margin: 0 auto;
     box-sizing: content-box;
     padding: 0 20px;
-    background: linear-gradient(135deg, $second-color, $primary-yellow);
-    border-radius: $border-radius-large;
+    background: linear-gradient(135deg, variables.$second-color, variables.$primary-yellow);
+    border-radius: variables.$border-radius-large;
 }
 
 .card-prin-pjt {
-    border-radius: $border-radius-large !important;
+    border-radius: variables.$border-radius-large !important;
 }
 
 .con-pjt {
-    padding: $padding-large 70px;
+    padding: variables.$padding-large 70px;
 }
 
 .two-column {
@@ -53,7 +53,7 @@
 .left-column,
 .right-column {
     width: 50%;
-    padding: $padding-medium-home;
+    padding: variables.$padding-medium-home;
 }
 
 .card-image {
@@ -61,16 +61,16 @@
 }
 
 .card-link {
-    border-radius: $border-radius-medium !important;
+    border-radius: variables.$border-radius-medium !important;
     text-decoration: none !important;
     color: inherit !important;
-    box-shadow: $shadow-home;
-    transition: transform $transition-duration ease-in-out, box-shadow $transition-duration ease-in-out;
+    box-shadow: variables.$shadow-home;
+    transition: transform variables.$transition-duration ease-in-out, box-shadow variables.$transition-duration ease-in-out;
     overflow: hidden;
 
     &:hover {
         transform: translateY(-5px);
-        box-shadow: 0px 6px 15px $second-color;
+        box-shadow: 0px 6px 15px variables.$second-color;
     }
 
     .card-title-pjt,
@@ -91,16 +91,16 @@
 .left-column {
     display: flex;
     flex-direction: column;
-    gap: $gap-medium;
+    gap: variables.$gap-medium;
 
     .title-pjt {
-        color: $text-color-light;
+        color: variables.$text-color-light;
         font-weight: bold;
         font-size: 2rem;
     }
 
     .description-pjt {
-        color: $text-color-light;
+        color: variables.$text-color-light;
         font-weight: 500;
     }
 }
@@ -111,13 +111,13 @@
     right: 10px;
     color: rgb(153, 188, 60);
     border-radius: 50%;
-    width: $button-size;
-    height: $button-size;
-    @include flex-center;
+    width: variables.$button-size;
+    height: variables.$button-size;
+    @include mixins.flex-center;
     text-decoration: none;
 
     &:hover {
-        color: $second-color;
+        color: variables.$second-color;
     }
 }
 

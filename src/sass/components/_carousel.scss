@@ -1,6 +1,6 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use '../utils/variables';
+@use '../utils/mixins';
 
 .carousel-home {
     position: relative;
@@ -9,7 +9,7 @@
 
     .carousel-inner {
         width: 100%;
-        height: $carousel-height;
+        height: variables.$carousel-height;
 
         .carousel-item {
             position: relative; // Asegura que el caption se posicione dentro de cada slide
@@ -44,7 +44,7 @@
 
     .carousel-item img {
         width: 100%;
-        height: $carousel-image-height;
+        height: variables.$carousel-image-height;
         object-fit: cover;
         filter: brightness(45%); // Mantiene visibilidad del texto
     }
@@ -52,17 +52,17 @@
 
 // Indicadores del carrusel
 .carousel-indicators {
-    bottom: $carousel-indicators-bottom !important;
+    bottom: variables.$carousel-indicators-bottom !important;
 
     // Personalización del indicador activo
     .active {
-        background-color: $carousel-indicator-active-bg;
+        background-color: variables.$carousel-indicator-active-bg;
     }
 }
 
 // Estilo general de las imágenes del carrusel
 .carousel-img {
-    min-height: $carousel-image-height;
+    min-height: variables.$carousel-image-height;
     object-fit: cover;
 }
 

@@ -1,10 +1,10 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use '../utils/variables';
+@use '../utils/mixins';
 
 // Estilo del ícono de contacto
 .icon-contac {
-    font-size: $icon-size-large-contact;
+    font-size: variables.$icon-size-large-contact;
     color: yellow;
 }
 
@@ -33,15 +33,15 @@
 
     // Información de contacto
     .contacto-info {
-        background: $second-color;
-        color: $text-color-light;
-        padding: $form-padding;
+        background: variables.$second-color;
+        color: variables.$text-color-light;
+        padding: variables.$form-padding;
         flex: 1;
         display: flex;
         flex-direction: column;
         text-align: left;
         border-radius: 12px;
-        box-shadow: $shadow;
+        box-shadow: variables.$shadow;
 
         h2 {
             font-size: 24px;
@@ -49,8 +49,8 @@
         }
 
         .icon-redessociales-contact {
-            font-size: $icon-size-large-contact;
-            color: $text-color-light !important;
+            font-size: variables.$icon-size-large-contact;
+            color: variables.$text-color-light !important;
             margin: 0.4rem;
         }
 
@@ -74,7 +74,7 @@
             font-size: 14px;
 
             a {
-                color: $text-color-light;
+                color: variables.$text-color-light;
                 text-decoration: underline;
             }
         }
@@ -83,8 +83,8 @@
     // Formulario de contacto
     .contacto-formulario {
         position: relative;
-        background: $background-light;
-        padding: $form-padding;
+        background: variables.$background-light;
+        padding: variables.$form-padding;
         top: -60px;
         left: -60px;
         border-radius: 12px;
@@ -108,7 +108,7 @@
 
             .row {
                 display: flex;
-                gap: $form-gap;
+                gap: variables.$form-gap;
 
                 .col-md-6 {
                     flex: 1;
@@ -119,7 +119,7 @@
             textarea {
                 width: 100%;
                 border: none;
-                border-bottom: 1px solid $text-color-light;
+                border-bottom: 1px solid variables.$text-color-light;
                 padding: 5px;
                 outline: none;
                 background: none;
@@ -128,22 +128,22 @@
             textarea {
                 resize: none;
                 overflow: hidden;
-                height: $form-input-height;
+                height: variables.$form-input-height;
             }
 
             button {
-                background: $second-color;
-                color: $text-color-light;
+                background: variables.$second-color;
+                color: variables.$text-color-light;
                 border: none;
-                padding: $form-button-padding;
+                padding: variables.$form-button-padding;
                 font-size: 16px;
                 cursor: pointer;
-                transition: $transition-duration;
+                transition: variables.$transition-duration;
                 border-radius: 8px;
                 width: 100%;
 
                 &:hover {
-                    background: $primary-color;
+                    background: variables.$primary-color;
                 }
             }
         }

@@ -1,6 +1,7 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use "sass:color";
+@use '../utils/variables';
+@use '../utils/mixins';
 
 .custom-navbar {
     position: fixed !important;
@@ -9,24 +10,24 @@
     left: 0;
     z-index: 10;
     background: transparent;
-    transition: background $transition-duration ease-in-out;
-    background-color: $second-color !important;
+    transition: background variables.$transition-duration ease-in-out;
+    background-color: variables.$second-color !important;
     --bs-bg-opacity: 1 !important;
     margin: 20px 40px !important;
     padding: 0 !important;
-    border-radius: $border-radius;
+    border-radius: variables.$border-radius;
 
     .navbar-brand,
     .color-link {
-        color: $text-color-light !important;
+        color: variables.$text-color-light !important;
     }
 }
 
 .container-fluid-navbar,
 .navbar-collapse {
-    background-color: $second-color;
-    border-radius: $border-radius;
-    padding: $padding-medium;
+    background-color: variables.$second-color;
+    border-radius: variables.$border-radius;
+    padding: variables.$padding-medium;
     width: 50% !important;
 }
 
@@ -52,7 +53,7 @@
                 width: 0;
                 height: 3px;
                 background-color: rgb(217, 217, 217);
-                transition: width $transition-duration ease-in-out, left $transition-duration ease-in-out;
+                transition: width variables.$transition-duration ease-in-out, left variables.$transition-duration ease-in-out;
                 transform: translateX(-50%);
             }
 
@@ -77,16 +78,16 @@
     }
 
     .btn {
-        @include flex-center;
-        gap: $gap-small-navbar;
+        @include mixins.flex-center;
+        gap: variables.$gap-small-navbar;
         font-size: 0.9rem;
         font-weight: 500;
-        color: $text-color-light;
+        color: variables.$text-color-light;
         background-color: transparent;
-        border: 2px solid $text-color-light;
-        border-radius: $border-radius;
+        border: 2px solid variables.$text-color-light;
+        border-radius: variables.$border-radius;
         padding: 0.5rem 1rem;
-        transition: all $transition-duration ease;
+        transition: all variables.$transition-duration ease;
 
         .icon-navbar-lenguaje {
             font-size: 1.2rem;
@@ -98,13 +99,13 @@
     .dropdown-item {
         &:hover,
         &:focus {
-            background-color: $second-color;
-            color: $text-color-light;
+            background-color: variables.$second-color;
+            color: variables.$text-color-light;
         }
 
         &.active {
-            background-color: $second-color;
-            color: $text-color-light;
+            background-color: variables.$second-color;
+            color: variables.$text-color-light;
         }
     }
 }
@@ -117,12 +118,12 @@
     left: 0;
     border: none;
     border-radius: 8px;
-    box-shadow: $shadow-navbar;
+    box-shadow: variables.$shadow-navbar;
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
-    transition: all $transition-duration ease;
+    transition: all variables.$transition-duration ease;
 
     &.show {
         opacity: 1;
@@ -137,13 +138,13 @@
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: $gap-small-navbar;
+            gap: variables.$gap-small-navbar;
             font-size: 0.9rem;
-            transition: all $transition-duration ease;
+            transition: all variables.$transition-duration ease;
 
             &:hover {
-                background-color: $second-color;
-                color: $text-color-light;
+                background-color: variables.$second-color;
+                color: variables.$text-color-light;
             }
         }
     }
@@ -216,7 +217,7 @@
         left: 75%;
         transform: translateX(-50%);
         width: 90%;
-        background-color: $second-color;
+        background-color: variables.$second-color;
         flex-direction: column;
         text-align: center;
         padding: 15px;
@@ -257,7 +258,7 @@
                 transition: all 0.3s ease;
 
                 &:hover {
-                    background-color: lighten($second-color, 10%);
+                    background-color: color.adjust(variables.$second-color, $lightness: 10%);
                     border-radius: 5px;
                 }
             }
@@ -265,7 +266,7 @@
             .dropdown-menu-items {
                 display: none;
                 flex-direction: column;
-                background: darken($second-color, 5%);
+                background: color.adjust(variables.$second-color, $lightness: -5%);
                 border-radius: 8px;
                 padding: 10px;
                 transition: all 0.3s ease-in-out;
@@ -287,7 +288,7 @@
                 transition: background 0.3s ease;
 
                 &:hover {
-                    background-color: lighten($second-color, 10%);
+                    background-color: color.adjust(variables.$second-color, $lightness: 10%);
                 }
             }
         }

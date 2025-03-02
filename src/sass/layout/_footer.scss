@@ -1,15 +1,15 @@
 // Importar variables y mixins necesarios
-@import '../utils/variables';
-@import '../utils/mixins';
+@use '../utils/variables';
+@use '../utils/mixins';
 
 // Estilos generales del Footer
 .container-footer {
-    background-color: $second-color;
+    background-color: variables.$second-color;
 }
 
 // Estilo de los enlaces del Footer
 .color-link-footer {
-    color: $text-color-light;
+    color: variables.$text-color-light;
     position: relative;
     text-decoration: none;
     padding-bottom: 5px;
@@ -21,9 +21,9 @@
         left: 0;
         bottom: 0;
         width: 0;
-        height: $footer-link-line-height;
-        background-color: $text-color-light;
-        transition: width $footer-link-transition-duration ease-in-out;
+        height: variables.$footer-link-line-height;
+        background-color: variables.$text-color-light;
+        transition: width variables.$footer-link-transition-duration ease-in-out;
     }
 
     &:hover::after {
@@ -33,7 +33,7 @@
 
 // Contenedor interno del Footer
 .container-sub-footer {
-    width: $footer-container-width;
+    width: variables.$footer-container-width;
     margin: 0 auto !important;
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +42,7 @@
 
 // Logo del Footer
 .logo-footer {
-    width: $footer-logo-width;
+    width: variables.$footer-logo-width;
     max-width: 150px;
 
     @media (max-width: 768px) {
