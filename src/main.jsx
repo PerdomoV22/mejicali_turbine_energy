@@ -4,8 +4,8 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-//import './styles/custom.scss';
 import './sass/main.scss';
+import "../src/translation/config/i18n.js";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

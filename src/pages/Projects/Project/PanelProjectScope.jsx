@@ -1,8 +1,13 @@
 import { FaCheckSquare } from 'react-icons/fa';
 import Zoom from "react-medium-image-zoom";
 import 'react-medium-image-zoom/dist/styles.css'
+import { useTranslation } from "react-i18next";
 
 const ProjectScope = ({srcImage, dataProjectScope, dataProjectMoreScope}) => {
+
+    // Traduccion de la pagina
+    const { t } = useTranslation();
+
     return (
         <section className="project-scope max-width bottom-margin">
             <div className="image-container">
@@ -11,7 +16,7 @@ const ProjectScope = ({srcImage, dataProjectScope, dataProjectMoreScope}) => {
                 </Zoom>
             </div>
             <div className="content">
-                <h1 className="title">Alcance del Proyecto</h1>
+                <h1 className="title">{t('panelScope.title')}</h1>
                 <ul className="scope-list">
                     {dataProjectScope.map((item, index) => (
                         <li key={index} className="scope-item">

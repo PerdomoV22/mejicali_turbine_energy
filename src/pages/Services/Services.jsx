@@ -3,14 +3,19 @@ import Fotoproyecto1 from '../../assets/images/proyecto-gmd-2022.jpg';
 import PanelServicies from "./PanelServicies";
 import PanelSolutions from "./PanelSolutions";
 import PanelPjtMedida from "./PanelPjtMedida";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {    
+
+    // Traduccion de la pagina web 
+    const { t } = useTranslation();
+
     return (
         <>
             <HeroSection
                 src = {Fotoproyecto1}
-                title = "Nuestros Servicios y Soluciones"
-                description = "En Mejicali Turbine Energy, transformamos desafíos en soluciones energéticas a la medida. Con una combinación de innovación, experiencia y rapidez, ofrecemos energía confiable y eficiente, adaptándonos a las necesidades únicas de cada cliente. Resultados excepcionales en tiempo récord, porque la energía no puede esperar."
+                title={t("hero-services.title")}
+                description={t("hero-services.description")}
             />
             <PanelServicies />
             <PanelSolutions />

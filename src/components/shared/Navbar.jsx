@@ -3,22 +3,7 @@ import { Link } from 'react-router-dom';
 import { TbWorld } from "react-icons/tb";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react';
-
-const navLinks = [
-    { label: 'Sobre Nosotros', path: '/sobre-nosotros' },
-    { label: 'Servicios', path: '/servicios' },
-    { 
-        label: 'Proyectos', 
-        path: '/proyectos', 
-        submenu: [
-            { label: 'Proyecto GMD 2022', path: '/proyectos' },
-            { label: 'Proyecto GMD 2021', path: '/proyectos/proyecto2' },
-            { label: 'Proyecto Palo Seco', path: '/proyectos/proyecto3' },
-            { label: 'Proyecto S.E. Movil Tula', path: '/proyectos/proyecto4' }
-        ]
-    },
-    { label: 'Contáctanos', path: '/contact' }
-];
+import { useTranslation } from "react-i18next";
 
 const NavItem = ({ label, path, submenu, closeMenu }) => (
     <li className={`nav-item${submenu ? ' dropdown' : ''}`}>
@@ -54,11 +39,35 @@ const NavItem = ({ label, path, submenu, closeMenu }) => (
 
 const Navbar = () => {
 
+    // Menu cambio de idioma 
     const [menuOpen, setMenuOpen] = useState(false);
-    const [language, setLanguage] = useState('Español'); // Estado para el idioma seleccionado
-
     const toggleMenu = () => setMenuOpen(!menuOpen);
     const closeMenu = () => setMenuOpen(false);
+    const [language, setLanguage] = useState('Español');
+
+    // Funcionalidad para cambiar el idioma de la pagina
+    const { t, i18n } = useTranslation();
+    const changeLanguage = (langCode, langLabel) => {
+        i18n.changeLanguage(langCode);
+        setLanguage(langLabel);
+    };
+
+    // Data de la navegacion
+    const navLinks = [
+        { label: t('nav.about'), path: '/sobre-nosotros' },
+        { label: t('nav.services'), path: '/servicios' },
+        { 
+            label: t('nav.projects'), 
+            path: '/proyectos', 
+            submenu: [
+                { label: t('nav.project1'), path: '/proyectos' },
+                { label: t('nav.project2'), path: '/proyectos/proyecto2' },
+                { label: t('nav.project3'), path: '/proyectos/proyecto3' },
+                { label: t('nav.project4'), path: '/proyectos/proyecto4' }
+            ]
+        },
+        { label: t('nav.contact'), path: '/contact' }
+    ];
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light custom-navbar">
@@ -86,7 +95,8 @@ const Navbar = () => {
                     <li>
                         <button 
                             className="dropdown-item" 
-                            onClick={() => setLanguage('Español')}
+                            onClick={() => changeLanguage("es", "Español")}
+                            //onClick={() => setLanguage('Español')}
                         >
                             Español
                         </button>
@@ -94,7 +104,8 @@ const Navbar = () => {
                     <li>
                         <button 
                             className="dropdown-item" 
-                            onClick={() => setLanguage('Inglés')}
+                            onClick={() => changeLanguage("en", "Inglés")}
+                            //onClick={() => setLanguage('Ingles')}
                         >
                             Ingles
                         </button>

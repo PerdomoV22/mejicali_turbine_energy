@@ -40,20 +40,27 @@
 .collage {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5px;
+    width: 100%;
     margin-bottom: 3rem;
 
     &__image {
-        width: 33.33%;
-        height: auto;
+        width: 33.33vw; 
+        height: 40vh;
         object-fit: cover;
-        transition: transform 0.1s ease-in-out;
+        transition: transform 0.2s ease-in-out;
+    }
 
-        &:hover {
-        transform: scale(1.05);
-        }
+    .react-medium-image-zoom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }
+
+
 
 //-------------- Project Card Info --------------
 .panel-info-projects {
@@ -200,10 +207,6 @@
             border-radius: 10px;
             object-fit: cover;
             transition: transform variables.$transition-duration ease-in-out;
-
-            &:hover {
-                transform: scale(1.05);
-            }
         }
     }
 }
@@ -260,10 +263,6 @@
             height: 400px;
             object-fit: cover;
             transition: transform variables.$transition-duration ease-in-out;
-
-            &:hover {
-                transform: scale(1.05);
-            }
         }
     }
 }
@@ -298,7 +297,7 @@
         margin-bottom: 1.5rem;
 
         &__image {
-            width: calc(33.33% - 3px); 
+            height: auto; 
         }
     }
 
@@ -410,7 +409,8 @@
         margin-bottom: 1rem;
 
         &__image {
-            width: calc(33.33% - 2px); // Se mantiene el layout horizontal con ajustes mínimos
+            width: calc(100% - 2px); // En móviles, una imagen por fila
+            height: auto;
         }
     }
 

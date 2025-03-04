@@ -1,23 +1,7 @@
+import { useTranslation } from "react-i18next";
 import { SlEnergy } from "react-icons/sl";
 import { IoMdBatteryCharging } from "react-icons/io";
 import { FaGears } from "react-icons/fa6";
-
-const panelSections = [
-    {
-        title: "Nuestra Visión",
-        description: "Incursionar en el mercado global con soluciones de energía eléctrica innovadoras, utilizando diésel o gas natural, y ofreciendo capacidades que van desde 10 MW hasta 500 MW, adaptándonos a las necesidades específicas de cada cliente."
-    },
-    {
-        title: "Nuestro Propósito",
-        description: "Instalar soluciones de energía eléctrica en diésel o gas natural en menos de 60 días, asegurando eficiencia operativa, sostenibilidad y excelencia técnica en cada proyecto."
-    }
-];
-
-const panelCards = [
-    { icon: <IoMdBatteryCharging className="icon-panel" />, title: "Energía confiable" },
-    { icon: <SlEnergy className="icon-panel" />, title: "Generación de energía" },
-    { icon: <FaGears className="icon-panel" />, title: "Tecnología avanzada" }
-];
 
 const PanelSection = ({ title, description }) => (
     <div className="container-colunm">
@@ -34,6 +18,27 @@ const PanelCard = ({ icon, title }) => (
 );
 
 const ContentPanel = () => {
+
+    // Traduccion de la pagina
+    const { t } = useTranslation();
+
+    const panelSections = [
+        {
+            title: t("panel.vision.title"),
+            description: t("panel.vision.description")
+        },
+        {
+            title: t("panel.purpose.title"),
+            description: t("panel.purpose.description")
+        }
+    ];
+
+    const panelCards = [
+        { icon: <IoMdBatteryCharging className="icon-panel" />, title: t("panel.cards.energy_reliable") },
+        { icon: <SlEnergy className="icon-panel" />, title: t("panel.cards.energy_generation") },
+        { icon: <FaGears className="icon-panel" />, title: t("panel.cards.advanced_technology") }
+    ];
+
     return (
         <div className="container-panel bottom-margin">
             <div className="container-panel-info">

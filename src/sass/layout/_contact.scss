@@ -155,6 +155,10 @@
 // Tablets
 @media (max-width: 768px) {    
 
+    .contacto-container {
+        flex-direction: column-reverse !important; 
+    }
+
     .mt-5 {
         margin-top: 0 !important;
     }

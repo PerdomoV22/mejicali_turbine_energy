@@ -1,48 +1,11 @@
 import { useState, useEffect } from "react";
-const proyectos = [
-    {
-        title: "Adecuación del terreno",
-        description:"Preparación del terreno destinado para la solución energética.",
-    },
-    {
-        title: "Diseño e ingeniería integral",
-        description: "Diseño, ingeniería e implementación de la infraestructura necesaria.",
-    },
-    {
-        title: "Instalación de sistemas de filtración",
-        description:"Instalación y puesta en marcha de sistemas de filtración de gas y diésel (skids).",
-    },
-    {
-        title: "Operación y mantenimiento",
-        description: "Operación y mantenimiento de subestaciones eléctricas.",
-    },
-    {
-        title: "Suministro de turbinas",
-        description: "Suministro de turbinas de combustible dual y motores de combustión interna.",
-    },
-    {
-        title: "Modelos de negocio personalizados",
-        description: "Desarrollo de modelos de negocio y estructuras comerciales competitivas.",
-    },
-    {
-        title: "Ingeniería de detalle",
-        description: "Optimización de la eficiencia mediante ingeniería de detalle.",
-    },
-    {
-        title: "Construcción de líneas de transmisión",
-        description: "Construcción de líneas de transmisión y expansión de subestaciones eléctricas.",
-    },
-    {
-        title: "Plantas de tratamiento de agua",
-        description: "Suministro e instalación de plantas de tratamiento de agua.",
-    },
-        {
-        title: "Supervisión de contratos",
-        description: "Supervisión de contratos asegurando estándares de calidad y plazos.",
-    },
-];
+import { useTranslation } from "react-i18next";
 
 const PanelPjtMedida = () => {
+
+    // Traduccion de la pagina
+    const { t } = useTranslation();
+    const proyectos = t("panelPjtMedida.projects", { returnObjects: true });
 
     // Función auxiliar para dividir el array en grupos de 4
     const chunkArray = (array, size) => {
@@ -71,9 +34,9 @@ const PanelPjtMedida = () => {
     return (
         <section className="proyectos-a-medida bottom-margin max-width">
             <div className="container text-center">
-                <h2 className="section-title">Proyectos a Medida</h2>
+                <h2 className="section-title">{t('panelPjtMedida.title')}</h2>
                 <p className="section-subtitle">
-                    Desarrollamos soluciones personalizadas adaptadas a tus necesidades.
+                    {t('panelPjtMedida.subtitle')}
                 </p>
                 {/* Carousel Vertical */}
                 <div className="vertical-carousel">

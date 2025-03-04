@@ -1,0 +1,471 @@
+{
+    "nav": {
+        "about": "About Us",
+        "services": "Services",
+        "projects": "Projects",
+        "contact": "Contact Us",
+        "project1": "Project GMD 2022",
+        "project2": "Project GMD 2021",
+        "project3": "Project Palo Seco",
+        "project4": "Project S.E. Movil Tula"
+    },
+
+    "footer": [
+        {
+            "title": "About Us",
+            "links": [
+                { "text": "Vision", "path": "" },
+                { "text": "Our Principles", "path": "" },
+                { "text": "What Sets Us Apart?", "path": "" }
+            ]
+        },
+        {
+            "title": "Services",
+            "links": [
+                { "text": "Fast Energy", "path": "" },
+                { "text": "Electric Power", "path": "" },
+                { "text": "Custom Projects", "path": "" }
+            ]
+        },
+        {
+            "title": "Projects",
+            "links": [
+                { "text": "GMD Project 2022", "path": "/proyectos" },
+                { "text": "GMD Project 2021", "path": "/proyectos/proyecto2" },
+                { "text": "Palo Seco Project", "path": "/proyectos/proyecto3" },
+                { "text": "S.E. Movil Tula Project", "path": "/proyectos/proyecto4" }
+            ]
+        }
+    ],
+
+    "reserved": {
+        "text": "MTE. All rights reserved."
+    },
+
+    "carousel": [
+        {
+            "id": 0,
+            "image": "Fotoproyecto1",
+            "title": "Mexicali Turbine Energy",
+            "description": "Since 2021, our mission has been to transform the way energy is supplied worldwide. With cutting-edge technology and fast solutions, we help companies ensure energy stability.",
+            "buttonText": "Learn more",
+            "buttonLink": "/servicios"
+        },
+        {
+            "id": 1,
+            "image": "Serviciosmte",
+            "title": "Customized Energy Solutions",
+            "description": "No matter the complexity of the challenge, at MTE we design tailor-made solutions to ensure an efficient and adaptable energy supply. From emergency power generation to large-scale installations.",
+            "buttonText": "Learn more",
+            "buttonLink": "/servicios"
+        },
+        {
+            "id": 2,
+            "image": "Fotoproyecto1",
+            "title": "Projects in 60 Days",
+            "description": "At MTE, we specialize in achieving ambitious challenges. The 130.4 MW GDM project was executed in record time, ensuring a reliable power supply and setting a new standard in efficiency.",
+            "buttonText": "Learn more",
+            "buttonLink": "/proyectos"
+        },
+        {
+            "id": 3,
+            "image": "Fotoproyecto2",
+            "title": "Energy for the Refinery",
+            "description": "We implemented an innovative energy solution at the Tula Refinery, installing a temporary 20 MVA transformer in record time.",
+            "buttonText": "Learn more",
+            "buttonLink": "/proyectos/proyecto4"
+        }
+    ], 
+
+    "cards": [
+        {
+            "id": 1,
+            "icon": "FaBuilding",
+            "title": "OUR COMPANY",
+            "description": "Committed to excellence in construction, we offer innovative and high-quality solutions.",
+            "text": "Learn more",
+            "link": "/sobre-nosotros"
+        },
+        {
+            "id": 2,
+            "icon": "FaTools",
+            "title": "OUR SERVICES",
+            "description": "From planning to execution, we provide construction and maintenance services with the highest standards.",
+            "text": "Learn more",
+            "link": "/sobre-nosotros"
+        },
+        {
+            "id": 3,
+            "icon": "FaHandshake",
+            "title": "COMMITMENT",
+            "description": "We are dedicated to customer satisfaction with a trust-based approach, quality, and compliance.",
+            "text": "Learn more",
+            "link": "/sobre-nosotros"
+        }
+    ],
+
+    "services": {
+        "title": "Our Services and Solutions",
+        "description": "At Mejicali Turbine Energy, we offer a wide range of energy solutions tailored to each client's specific needs. Our expertise and quick response capability allow us to deliver exceptional results in record time.",
+        "cards": [
+            {
+                "title": "Fast Energy",
+                "description": "We specialize in the construction, installation, commissioning, operation, and maintenance of fast-track power generation projects.",
+                "text": "More information",
+                "to": "/servicios"
+            },
+            {
+                "title": "Customized Projects",
+                "description": "We specialize in developing tailor-made projects, adapting each solution from scratch.",
+                "text": "More information",
+                "to": "/servicios"
+            }
+        ]
+    },
+
+    "projects": {
+        "title": "Looking for efficient and proven energy solutions?",
+        "description": "We tackle major challenges with innovative solutions. Discover how we have helped our clients optimize their energy infrastructure with successful projects that ensure efficiency, speed, and reliability.",
+        "items": [
+            {
+                "id": 1,
+                "to": "/proyectos/proyecto2",
+                "alt": "GMD 2021 Project",
+                "description": "Reliable energy in record time with advanced technology."
+            },
+            {
+                "id": 2,
+                "to": "/proyectos/proyecto3",
+                "alt": "Puerto Rico Project",
+                "description": "Efficient installation of TM2500 turbines to ensure power supply."
+            }
+        ]
+    },
+
+    "contact": {
+        "title": "Reliable energy when you need it most!",
+        "description": "At MTE, we know that every minute counts when it comes to energy supply. That’s why we offer solutions designed to ensure a safe, efficient, and customized power supply. Our expertise in fast-track projects allows us to deliver energy infrastructure in record time without compromising quality or safety.",
+        "cta": "Turn challenges into opportunities. Let’s talk about your next project.",
+        "form": {
+            "title": "How can we help you?",
+            "fields": {
+            "nombre": { "label": "Name", "error": "Name is required" },
+            "telefono": { "label": "Phone", "error": "Phone is required" },
+            "correo": { "label": "Email", "error": "Email is required" },
+            "mensaje": { "label": "Message", "error": "Message is required" }
+            },
+            "submit": "Send"
+        },
+        "contactInfo": {
+            "title": "Contact us:",
+            "email": "Email: info@cominio.com",
+            "phone": "Call us: +34 608 18 04 98",
+            "social": "Social Media:",
+            "address": "Address"
+        }
+    }, 
+
+    "hero-about": {
+        "title": "Who Are We?",
+        "description": "Since 2021, we have been revolutionizing how the world receives its energy. With cutting-edge technology and fast solutions, we provide businesses with the energy stability they need to grow without limits."
+    },
+
+    "panel": {
+        "vision": {
+            "title": "Our Vision",
+            "description": "Enter the global market with innovative electric energy solutions, using diesel or natural gas, and offering capacities ranging from 10 MW to 500 MW, adapting to the specific needs of each client."
+        },
+        "purpose": {
+            "title": "Our Purpose",
+            "description": "Install electric energy solutions using diesel or natural gas in less than 60 days, ensuring operational efficiency, sustainability, and technical excellence in every project."
+        },
+        "cards": {
+            "energy_reliable": "Reliable Energy",
+            "energy_generation": "Energy Generation",
+            "advanced_technology": "Advanced Technology"
+        }
+    },
+    
+    "principles": {
+        "title": "Our Principle",
+        "adaptability": "Adaptability",
+        "items": {
+            "future": {
+                "title": "Future",
+                "text": "Provide energy solutions using all technologies, including next-generation ones."
+            },
+            "innovation": {
+                "title": "Innovation",
+                "text": "Be open to new ideas and methods."
+            },
+            "transformation": {
+                "title": "Transformation",
+                "text": "Adjust our strategies and plans based on emerging trends and market opportunities."
+            },
+            "consistency": {
+                "title": "Consistency",
+                "text": "Adjust our strategies and plans based on emerging trends and market opportunities."
+            }
+        }
+    }, 
+
+    "infoSection": {
+        "sections": {
+            "whatDistinguishesUs": {
+                "title": "What Distinguishes Us?",
+                "text": "We offer competitive and customized solutions, using technologies that adapt to the specific needs of our clients. Our ability to combine technologies allows us to optimize results and exceed expectations.",
+                "alt": "Image of our work team"
+            },
+            "ourHistory": {
+                "title": "Our History",
+                "text": "Founded in 2021, along with our subsidiary Generación de Mejicali, the company was created to provide electric energy solutions in emergency situations. Our first major milestone was the installation of five GE TM2500 generation 6 turbines in less than 60 days, including the civil works of the site.",
+                "alt": "Image of our history"
+            }
+        }
+    }, 
+
+    "hero-services": {
+        "title": "Our Services and Solutions",
+        "description": "At Mejicali Turbine Energy, we transform challenges into tailor-made energy solutions. With a combination of innovation, experience, and speed, we offer reliable and efficient energy, adapting to the unique needs of each client. Exceptional results in record time, because energy can't wait."
+    }, 
+    
+    "panelServicies": {
+        "title": "Experts in Fast-Track Energy Projects",
+        "description": "We are experts in the construction, installation, commissioning, operation, and maintenance of fast-track power generation projects. MTE has successfully developed, operated, and maintained over 260 MW of power in less than two months in Mexico and the Caribbean.",
+        "steps": [
+            "Supply of turbines and step-up transformers.",
+            "Diesel and gas filtration systems, gas valves.",
+            "Temporary substations, water treatment plants.",
+            "Transmission lines and medium and high voltage equipment."
+        ]
+    }, 
+
+    "panelSolutions": {
+        "title": "Emergency Power Solutions",
+        "solutions": [
+            {
+                "title": "Mobile Substations",
+                "description": "For rapid deployment in critical situations."
+            },
+            {
+                "title": "Power Generation Projects with Engines",
+                "description": "Adapted for efficient operation in various conditions."
+            },
+            {
+                "title": "Power Generation Projects with Turbines",
+                "description": "Using diesel and natural gas, with capacities from 10 MW to 500 MW."
+            },
+            {
+                "title": "Fast Installation",
+                "description": "Energy solutions in less than 60 days, ensuring speed without compromising quality."
+            }
+        ]
+    }, 
+
+    "panelPjtMedida": {
+        "title": "Tailored Projects",
+        "subtitle": "We develop customized solutions tailored to your needs.",
+        "projects": [
+            {
+                "title": "Land Preparation",
+                "description": "Preparation of the land designated for the energy solution."
+            },
+            {
+                "title": "Comprehensive Design and Engineering",
+                "description": "Design, engineering, and implementation of the necessary infrastructure."
+            },
+            {
+                "title": "Filtration System Installation",
+                "description": "Installation and commissioning of gas and diesel filtration systems (skids)."
+            },
+            {
+                "title": "Operation and Maintenance",
+                "description": "Operation and maintenance of electrical substations."
+            },
+            {
+                "title": "Turbine Supply",
+                "description": "Supply of dual-fuel turbines and internal combustion engines."
+            },
+            {
+                "title": "Customized Business Models",
+                "description": "Development of business models and competitive commercial structures."
+            },
+            {
+                "title": "Detailed Engineering",
+                "description": "Optimization of efficiency through detailed engineering."
+            },
+            {
+                "title": "Transmission Line Construction",
+                "description": "Construction of transmission lines and expansion of electrical substations."
+            },
+            {
+                "title": "Water Treatment Plants",
+                "description": "Supply and installation of water treatment plants."
+            },
+            {
+                "title": "Contract Supervision",
+                "description": "Supervision of contracts ensuring quality standards and deadlines."
+            }
+        ]
+    }, 
+
+    "project1": {
+        "heroTitle": "GMD Project 2022",
+        "heroDescription": "Since 2021, our mission has been to transform the way energy is supplied worldwide. With cutting-edge technology and fast solutions, we help businesses ensure energy stability.",
+        "introTitle": "Exceeding Expectations in Power Generation",
+        "introDescription": "At Mejicali Turbine Energy, we are proud to announce the successful fulfillment of all technical, regulatory, and operational requirements established for the Commissioning of the Corrective Protocol Unit 2022 – Mejicali Generation.",
+        "panelTitle": "Process Visualization",
+        "panelWord": "Representation",
+        "highlightTitle": "Exceeding Expectations",
+        "highlightText": "The highlight of our achievement is that although the project required a capacity of <span>100 MW</span>, we implemented an innovative solution that allows for generation up to <span>130.4 MW</span>, exceeding initial expectations and providing greater value to the electrical system.",
+        "highlightStats": {
+                "energy": {
+                    "value": "130.4 MW",
+                    "label": "Generated Energy"
+                },
+                "time": {
+                    "value": "60 Days",
+                    "label": "Implementation Time"
+                },
+                "sustainability": {
+                    "value": "Sustainability",
+                    "label": "Commitment to the Future"
+                }
+        },
+        "highlightClosing": "At <strong>Mejicali Turbine Energy</strong>, we remain committed to excellence in power generation, driving solutions that go beyond standards and contribute to Mexico's sustainable development.",
+        "infoData": [
+            {
+                "title": "Infrastructure and Advanced Equipment",
+                "description": "We install all the required infrastructure, including primary equipment, advanced metering systems, state-of-the-art communication channels, and high-precision SCADA systems."
+            },
+            {
+                "title": "Regulatory Compliance",
+                "description": "We comply with all regulatory requirements before CFE, CENACE, CRE, and other entities, ensuring the safe and efficient operation of the plant."
+            },
+            {
+                "title": "Testing and Energization",
+                "description": "We perform pre-operational tests and successful energization, guaranteeing the reliability and optimal performance of the system."
+            }
+        ]
+    }, 
+
+    "project2": {
+        "title": "GMD 2021 Project",
+        "description": "Since 2021, our mission has been to transform the way energy is supplied worldwide. With cutting-edge technology and rapid solutions, we help companies ensure energy stability.", 
+        "intro": {
+            "title": "GDM Project for CENACE",
+            "description": "MTE successfully carried out the commissioning, operation, and maintenance of 100 MW for the National Energy Control Center (CENACE) in Mexicali, Mexico."
+        },
+        "highlights": {
+            "word": "Advancements",
+            "title": "Technological Advances for Secure and Efficient Energy"
+        },
+        "infoData": [
+            {
+                "title": "Next-Generation Power",
+                "description": "Installation of four TM 2500+ aeroderivative gas turbines."
+            },
+            {
+                "title": "Strategic Electrical Infrastructure",
+                "description": "Construction of a temporary electrical substation and a high-voltage step-up transformer."
+            },
+            {
+                "title": "Pure Water for Maximum Performance",
+                "description": "Implementation of a demineralized water treatment plant."
+            },
+            {
+                "title": "Uninterrupted Energy",
+                "description": "Black-Start system to ensure continuous power supply."
+            },
+            {
+                "title": "Expansion of the Electrical Grid",
+                "description": "Construction of a 9 km transmission line, mitigating the risk of blackouts in the region."
+            }
+        ],
+        "projectDetails": [
+            "Site Name: GDM",
+            "Capacity: 100 MW",
+            "Interconnection Point: S.E. Sánchez Taboada",
+            "Voltage: 230 kV",
+            "Fuel: Natural Gas",
+            "Technology: 4 TM 2500+ aeroderivative turbines"
+        ],
+        "projectScope": [
+            "Interconnection to the main gas pipeline.",
+            "Construction of the transmission line, civil works, grounding systems, and site security.",
+            "Installation of step-up transformer, electrical substation, Black-Start system, and water treatment plant.",
+            "Comprehensive system operation and maintenance."
+        ],
+        "projectMoreScope": [
+            {
+                "title": "Execution Timeframe:",
+                "description": "60 days from contract signing."
+            },
+            {
+                "title": "Fuel Supply:",
+                "description": "MTE was responsible for the turnkey solution, including fuel supply."
+            }
+        ]
+    }, 
+
+    "project3": {
+        "hero": {
+            "title": "Palo Seco Project for USACE",
+            "description": "Since 2021, our mission has been to transform the way energy is supplied worldwide. With cutting-edge technology and rapid solutions, we help companies ensure energy stability."
+        },
+        "intro": {
+            "title": "GDM Project for CENACE",
+            "description": "MTE was responsible for the logistics, installation, commissioning, operation, and maintenance of three TM 2500 aeroderivative turbines with a total capacity of 60 MW at the Palo Seco Power Plant in Puerto Rico for USACE in 2023, meeting the COD within the established timeframe."
+        },
+        "projectDetails": [
+            "Site Name: Palo Seco",
+            "Capacity: 60 MW",
+            "Interconnection Point: S.E. Palo Seco",
+            "Fuel: Natural Gas",
+            "Technology: GE TM2500 models (one TM 2500+ and two TM 2500)"
+        ],
+        "projectScope": [
+            "Transport and installation of the turbines.",
+            "Commissioning, operation, and maintenance."
+        ],
+        "projectMoreScope": [
+            {
+                "title": "Execution Timeframe:",
+                "description": "Less than 60 days from contract signing."
+            }
+        ]
+    }, 
+    
+    "project4": {
+        "hero": {
+            "title": "S.E. Mobile Tula Project",
+            "description": "Since 2021, our mission has been to transform the way energy is supplied worldwide. With cutting-edge technology and rapid solutions, we help companies ensure energy stability."
+        },
+        "intro": {
+            "title": "Temporary Transformer Solution",
+            "description": "At Mejicali Turbine Energy, we demonstrated our versatility by implementing a temporary 20 MVA power solution for a company at the Tula Refinery. This project involved installing a temporary transformer, providing a quick and efficient response to ensure operational continuity."
+        },
+        "scope": [
+            "Installation of a temporary 20 MVA transformer.",
+            "Support infrastructure, including civil works, connection systems, and security."
+        ],
+        "projectMoreScope": [
+            {
+                "title": "Adaptability:",
+                "description": "This approach allows us to offer our clients flexibility and scalability, ensuring that each project can grow and evolve according to future demands."
+            }
+        ]
+    }, 
+
+    "cardImage": {
+        "title": "PROJECT COMPLETED"
+    }, 
+
+    "panelDetails": {
+        "title": "Project Details"
+    },
+
+    "panelScope": {
+        "title": "Project Scope"
+    }
+}

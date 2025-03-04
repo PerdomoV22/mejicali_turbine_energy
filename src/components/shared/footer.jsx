@@ -1,35 +1,14 @@
 import { Link } from "react-router-dom";
 import LogoFooter from "../../assets/images/logo-footer-mte.png"; 
-
-const footerLinks = [
-    {
-        title: "Sobre Nosotros",
-        links: [
-            { text: "Visión", path: "" },
-            { text: "Nuestros Principios", path: "" },
-            { text: "¿Qué Nos Distingue?", path: "" },
-        ],
-    },
-    {
-        title: "Servicios",
-        links: [
-            { text: "Energía Rápida", path: "" },
-            { text: "Energía Eléctrica", path: "" },
-            { text: "Proyectos a Medida", path: "" },
-        ],
-    },
-    {
-        title: "Proyectos",
-        links: [
-            { text: "Proyecto GMD 2022", path: "/proyectos" },
-            { text: "Proyecto GMD 2021", path: "/proyectos/proyecto2" },
-            { text: "Proyecto Palo Seco", path: "/proyectos/proyecto3" },
-            { text: "Proyecto S.E. Movil Tula", path: "/proyectos/proyecto4" },
-        ],
-    },
-];
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+
+    const { t } = useTranslation(); 
+
+    // Data informacion
+    const footerLinks = t("footer", { returnObjects: true }); // Obtiene el array desde JSON
+
     return (
         <footer className="container-fluid container-footer">
             <div className="row container-sub-footer p-5 pb-1 text-white">
@@ -56,7 +35,7 @@ const Footer = () => {
                 <div className="footer-copy col-12 pt-4">
                     <hr />
                     <p className="text-center text-sm opacity-80">
-                        © {new Date().getFullYear()} MTE. Todos los derechos reservados.
+                        © {new Date().getFullYear()} {t('reserved.text')}
                     </p>
                 </div>
             </div>

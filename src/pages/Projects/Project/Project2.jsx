@@ -11,79 +11,35 @@ import PanelInfoProjects from "./PanelInfoProjects";
 import { FaCog, FaPlug, FaTint, FaBatteryFull, FaNetworkWired } from "react-icons/fa"
 import ProjectScope from "./PanelProjectScope";
 import ProjectDetails from "./PanelProjectDetails";
+import { useTranslation } from "react-i18next";
 
-const infoData = [
-    {
-        icon: <FaCog />,
-        title: "Potencia de Última Generación",
-        description:
-            "Instalación de cuatro turbinas de gas TM 2500+ aeroderivadas.",
-    },
-    {
-        icon: <FaPlug />,
-        title: "Infraestructura Eléctrica Estratégica",
-        description:
-            "Construcción de una subestación eléctrica temporal y un transformador elevador de tensión.",
-    },
-    {
-        icon: <FaTint />,
-        title: "Agua Pura para Máximo Desempeño",
-        description:
-            "Implementación de una planta de tratamiento de agua desmineralizada.",
-    },
-    {
-        icon: <FaBatteryFull />,
-        title: "Energía Ininterrumpida",
-        description:
-            "Sistema Black-Start para garantizar la continuidad del suministro eléctrico.",
-    },
-    {
-        icon: <FaNetworkWired />,
-        title: "Expansión de la Red Eléctrica",
-        description:
-            "Construcción de una línea de transmisión de 9 km, mitigando el riesgo de apagones en la región.",
-    },
+const icons = [
+    <FaCog />,
+    <FaPlug />,
+    <FaTint />,
+    <FaBatteryFull />,
+    <FaNetworkWired />,
 ];
-
-const projectDetails = [
-    "Nombre del sitio: GDM",
-    "Capacidad: 100 MW",
-    "Punto de interconexión: S.E. Sánchez Taboada",
-    "Voltaje: 230 kV",
-    "Combustible: Gas Natural",
-    "Tecnología: 4 turbinas aeroderivadas TM 2500+",
-];
-
-const projectScope = [
-    "Interconexión al gasoducto principal.",
-    "Construcción de la línea de transmisión, obras civiles, sistemas de puesta a tierra y seguridad del sitio.",
-    "Instalación de transformador elevador, subestación eléctrica, sistema Black-Start y planta de tratamiento de agua.",
-    "Operación y mantenimiento integral del sistema."
-];
-
-const projectMoreScope = [
-    {
-        title: "Plazo de Ejecución:",
-        description: "60 días a partir de la firma del contrato.",
-    }, 
-    {
-        title: "Suministro de Combustible:",
-        description: "MTE fue responsable de la solución integral llave en mano, incluyendo el suministro de combustible.",
-    }
-    
-]
 
 const Project2 = () => {
+
+    // Traduccion de la pagina
+    const { t } = useTranslation();
+    const infoData = t("project2.infoData", { returnObjects: true });
+    const projectDetails = t("project2.projectDetails", { returnObjects: true });
+    const projectScope = t("project2.projectScope", { returnObjects: true });
+    const projectMoreScope = t("project2.projectMoreScope", { returnObjects: true });
+
     return (
         <>
             <HeroSection
                 src = {Fotoproyecto1}
-                title = "Proyecto GMD 2021"
-                description = "Desde 2021, nuestra misión es transformar la forma en que se suministra energía en el mundo. Con tecnología de vanguardia y soluciones rápidas, ayudamos a empresas a garantizar una estabilidad energética."
+                title = {t("project2.title")}
+                description = {t("project2.description")}
             />
             <ProjectCardIntro 
-                title="Proyecto GDM para CENACE"
-                description="MTE llevó a cabo con éxito la puesta en marcha, operación y mantenimiento de 100 MW para el Centro Nacional de Control de Energía (CENACE) en Mexicali, México. "
+                title={t("project2.intro.title")}
+                description={t("project2.intro.description")}
             />
             <ImageCollage 
                 img1={imagecollage1}
@@ -91,9 +47,10 @@ const Project2 = () => {
                 img3={imagecollage3}
             />
             <PanelInfoProjects 
-                word="Avances"
-                title="Tecnológicos para una Energía Segura y Eficiente"
+                word={t("project2.highlights.word")}
+                title={t("project2.highlights.title")}
                 infoData={infoData}
+                icons={icons}
             />
             <ProjectDetails 
                 srcImage={imageProyecto2}

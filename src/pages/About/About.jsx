@@ -3,14 +3,19 @@ import PanelAbout from './PanelAbout';
 import HeroSection from '../../components/UI/HeroSection';
 import Principles from './Principales';
 import InfoSection from './InfoSection';
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+
+    // Traduccion de la pagina
+    const { t } = useTranslation();
+
     return (
         <>
             <HeroSection 
                 src={Fotoproyecto1}
-                title="¿Quiénes Somos?"
-                description="Desde 2021, revolucionamos la forma en que el mundo recibe su energía. Con tecnología de vanguardia y soluciones rápidas, brindamos a las empresas la estabilidad energética que necesitan para crecer sin límites."
+                title={t("hero-about.title")}
+                description={t("hero-about.description")}
             />
             <PanelAbout />
             <Principles />
