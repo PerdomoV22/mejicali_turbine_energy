@@ -2,28 +2,6 @@
 @use '../utils/variables';
 @use '../utils/mixins';
 
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-
-    background-color: variables.$whatsapp-green;
-    color: white;
-    font-size: 28px;
-    width: variables.$whatsapp-button-size;
-    height: variables.$whatsapp-button-size;
-
-    @include mixins.flex-center;
-    
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-    z-index: 1000;
-
-    transition: transform 0.3s ease, background-color 0.3s ease;
-
-    &:hover {
-        transform: scale(1.1);
-        background-color: variables.$whatsapp-green-hover;
-    }
+._2qp0Z, ._1yCVn {
+    z-index: 2;
 }

@@ -1,10 +1,14 @@
-import { FaWhatsapp } from "react-icons/fa";
+import { WhatsAppWidget } from "react-whatsapp-widget";
+import "react-whatsapp-widget/dist/index.css";
 
 const WhatsAppButton = () => {
     return (
-        <a href="https://wa.me/34608180498" className="whatsapp-button" target="_blank" rel="noopener noreferrer">
-            <FaWhatsapp />
-        </a>
+        <WhatsAppWidget
+            phoneNumber="+573145908319"
+            message="¡Hola! ¿Cómo puedo ayudarte?"
+            companyName="Mi Empresa"
+            sendButton="Enviar"
+        />
     );
 };
 
