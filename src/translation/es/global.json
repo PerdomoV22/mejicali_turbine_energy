@@ -160,7 +160,6 @@
             "title": "Contáctanos:",
             "email": "Correo: info@cominio.com",
             "phone": "Llámanos: +34 608 18 04 98",
-            "social": "Redes Sociales:",
             "address": "Dirección"
         }
     },
@@ -467,5 +466,48 @@
 
     "panelScope": {
         "title": "Alcance del Proyecto"
+    },
+
+    "seo": {
+        "home": {
+            "title": "Inicio",
+            "description": ""
+        },
+        "about": {
+            "title": "Sobre Nosotros",
+            "description": ""
+        }, 
+        "services": {
+            "title": "Servicios",
+            "description": ""
+        },
+        "project1": {
+            "title": "Proyecto GMD 2022",
+            "description": ""
+        },
+        "project2": {
+            "title": "Proyecto GMD 2021",
+            "description": ""
+        },
+        "project3": {
+            "title": "Proyecto Palo Seco", 
+            "description": ""
+        }, 
+        "project4":{
+            "title": "Proyecto S.E. Movil Tula",
+            "description": ""
+        }
+    },
+
+    "alt-image.project1": {
+        "alt-img1": "Proyecto GMD 2022, maquinaria de energia",
+        "alt-img2": "Proyecto GMD 2022, cajon de energya",
+        "alt-img3": "Proyecto GMD 2022, tuberias de energia"
+    },
+
+    "alt-image.project2": {
+        "alt-img1": "Proyecto GMD 2021, maquinaria de energia",
+        "alt-img2": "Proyecto GMD 2021, cajon de energya",
+        "alt-img3": "Proyecto GMD 2021, tuberias de energia"
     }
 }

@@ -2,7 +2,6 @@ import { FaLightbulb } from "react-icons/fa";
 import { MdOutlineEnergySavingsLeaf } from "react-icons/md";
 import { useForm } from "react-hook-form";
 import Logo from "../../assets/images/logo-contact.png";
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 const CardContact = () => {
@@ -34,20 +33,8 @@ const CardContact = () => {
                 <h2>{t("contact.contactInfo.title")}</h2>
                 <p>{t("contact.contactInfo.email")}</p>
                 <p>{t("contact.contactInfo.phone")}</p>
-                <div className="contacto-redes">
-                    <p>{t("contact.contactInfo.social")}</p>
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                        <FaFacebookF className="icon-redessociales-contact"/>
-                    </a>
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram className="icon-redessociales-contact"/>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedinIn className="icon-redessociales-contact"/>
-                    </a>
-                </div>
                 <div className="contacto-logo">
-                    <img src={Logo} alt="Logo" />
+                    <img src={Logo} alt="Logo MTE" />
                     <span>Mejicali Turbine Energy</span>
                 </div>
                 <p className="contacto-reviews">{t("contact.contactInfo.address")}</p>

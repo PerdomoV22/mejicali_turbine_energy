@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import imagenQueNosDistingue from "../../assets/images/imagenQueNosDistingue.jpg";
-import imagenNuestraHistoria from "../../assets/images/imagenNuestraHistoria.jpg";
+import imagenQueNosDistingue from "../../assets/images/imagenQueNosDistingue.webp";
+import imagenNuestraHistoria from "../../assets/images/imagenNuestraHistoria.webp";
 
 const InfoSection = () => {
 

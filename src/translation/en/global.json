@@ -160,7 +160,6 @@
             "title": "Contact us:",
             "email": "Email: info@cominio.com",
             "phone": "Call us: +34 608 18 04 98",
-            "social": "Social Media:",
             "address": "Address"
         }
     }, 
@@ -467,5 +466,48 @@
 
     "panelScope": {
         "title": "Project Scope"
+    }, 
+
+    "seo": {
+        "home": {
+            "title": "Home",
+            "description": ""
+        },
+        "about": {
+            "title": "About Us",
+            "description": ""
+        }, 
+        "services": {
+            "title": "Services",
+            "description": ""
+        },
+        "project1": {
+            "title": "GMD Project 2022",
+            "description": ""
+        },
+        "project2": {
+            "title": "GMD Project 2021",
+            "description": ""
+        },
+        "project3": {
+            "title": "Palo Seco Project", 
+            "description": ""
+        }, 
+        "project4": {
+            "title": "S.E. Mobile Tula Project",
+            "description": ""
+            }
+    }, 
+
+    "alt-image.project1": {
+        "alt-img1": "GMD Project 2022, energy machinery",
+        "alt-img2": "GMD Project 2022, energy box",
+        "alt-img3": "GMD Project 2022, energy pipelines"
+    },
+
+    "alt-image.project2": {
+        "alt-img1": "GMD Project 2021, energy machinery",
+        "alt-img2": "GMD Project 2021, energy box",
+        "alt-img3": "GMD Project 2021, energy pipelines"
     }
 }

@@ -1,13 +1,14 @@
 import HeroSection from "../../../components/UI/HeroSection";
-import Fotoproyecto1 from '../../../assets/images/proyecto-gmd-2022.jpg';
+import Fotoproyecto1 from '../../../assets/images/proyecto-gmd-2022.webp';
 import ProjectCardIntro from "./ProjectCardIntro";
 import ImageCollage from './ImageCollage';
-import imagecollage1 from '../../../assets/images/imageCollage1-proyecto4.jpg';
-import imagecollage2 from '../../../assets/images/imageCollage2-proyecto4.jpg';
-import imagecollage3 from '../../../assets/images/imageCollage3-proyecto4.jpg';
-import imageScope from '../../../assets/images/imageScope-proyecto4.jpg';
+import imagecollage1 from '../../../assets/images/imageCollage1-proyecto4.webp';
+import imagecollage2 from '../../../assets/images/imageCollage2-proyecto4.webp';
+import imagecollage3 from '../../../assets/images/imageCollage3-proyecto4.webp';
+import imageScope from '../../../assets/images/imageScope-proyecto4.webp';
 import ProjectScope from "./PanelProjectScope";
 import { useTranslation } from "react-i18next";
+import Seo from "../../../components/seo/seo";
 
 
 const Project4 = () => {
@@ -16,9 +17,13 @@ const Project4 = () => {
     const { t } = useTranslation();
     const projectScope = t("project3.projectScope", { returnObjects: true });
     const projectMoreScope = t("project3.projectMoreScope", { returnObjects: true });
+    const title = t("seo.project4.title");
+    const description = t("seo.project4.description");
+    
 
     return (
         <>
+            <Seo title={title} description={description} />
             <HeroSection
                 src = {Fotoproyecto1}
                 title = {t("project4.hero.title")}

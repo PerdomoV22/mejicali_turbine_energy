@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import Fotoproyecto1 from "../../assets/images/proyecto-gmd-2022.jpg";
-import Serviciosmte from "../../assets/images/servicios-mte.jpg";
-import Fotoproyecto2 from "../../assets/images/proyecto-tula.jpg";
+import Fotoproyecto1 from "../../assets/images/proyecto-gmd-2022.webp";
+import Serviciosmte from "../../assets/images/servicios-mte.webp";
+import Fotoproyecto2 from "../../assets/images/proyecto-tula.webp";
 import Button from "../../components/UI/Buttton";
 import { useTranslation } from "react-i18next";
 

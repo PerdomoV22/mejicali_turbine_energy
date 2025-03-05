@@ -75,7 +75,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="container-fluid-navbar">
                 <Link className="navbar-brand" to="/">
-                    <img src={logo} alt="Logo" width="90" height="30" className="d-inline-block align-text-top" />
+                    <img src={logo} alt="Logo MTE" width="90" height="30" className="d-inline-block align-text-top" />
                 </Link>
             </div>
 

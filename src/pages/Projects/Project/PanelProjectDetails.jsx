@@ -11,7 +11,7 @@ const ProjectDetails = ({srcImage, projectDetails}) => {
     return (
         <section className="project-details max-width bottom-margin">
             <div className="content">
-                <h1 className="title">{t('panelDetails.title')}</h1>
+                <h3 className="title">{t('panelDetails.title')}</h3>
                 <ul className="details-list">
                     {projectDetails.map((detail, index) => (
                         <li key={index} className="detail-item">

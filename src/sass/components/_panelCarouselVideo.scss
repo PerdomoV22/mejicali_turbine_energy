@@ -1,0 +1,150 @@
+// Importar variables y mixins necesarios
+@use '../utils/variables';
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .carousel-main {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .carousel-media {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+
+    .carousel-controls {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+
+        .carousel-arrow {
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+
+            &:hover {
+                background: rgb(106, 168, 66);
+                transform: translateY(-50%) scale(1.1);
+            }
+    
+            &.left {
+                left: -50px;
+            }
+    
+            &.right {
+                right: -50px;
+            }
+        }
+
+        .carousel-thumbnails {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            overflow: hidden;
+            margin: auto 3rem;
+
+            .thumbnail {
+                width: 80px;
+                height: 60px;
+                border-radius: 8px;
+                overflow: hidden;
+                cursor: pointer;
+                border: 2px solid transparent;
+                transition: border 0.3s;
+
+                &.active {
+                    border: 2px solid blue;
+                }
+
+                .thumbnail-media {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// Responsive 
+
+@media (max-width: 600px) {
+    .carousel {
+        width: 80%;
+        margin: 0 auto;
+        
+        .carousel-main {
+            max-width: 100%;
+
+            .carousel-media {
+            max-height: 150px; // Reducimos la altura del video/imágenes
+            }
+        }
+
+        .carousel-controls {
+            .carousel-arrow {
+                width: 25px;
+                height: 25px;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                &.left {
+                    left: -30px;
+                }
+
+                &.right {
+                    right: -30px;
+                }
+            }
+
+            .carousel-thumbnails {
+                flex-wrap: nowrap;
+                gap: 5px;
+                overflow-x: auto; // Hacemos que las miniaturas sean desplazables
+                padding: 8px;
+                margin: auto 0;
+
+                .thumbnail {
+                    width: 60px;
+                    height: 50px;
+
+                    &.active {
+                        border: 2px solid #007bff;
+                        transform: scale(1.05);
+                    }
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+        }
+    }
+}

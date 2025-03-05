@@ -16,7 +16,7 @@ const ProjectScope = ({srcImage, dataProjectScope, dataProjectMoreScope}) => {
                 </Zoom>
             </div>
             <div className="content">
-                <h1 className="title">{t('panelScope.title')}</h1>
+                <h3 className="title">{t('panelScope.title')}</h3>
                 <ul className="scope-list">
                     {dataProjectScope.map((item, index) => (
                         <li key={index} className="scope-item">

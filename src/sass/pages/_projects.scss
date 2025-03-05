@@ -50,6 +50,10 @@
         height: 40vh;
         object-fit: cover;
         transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     .react-medium-image-zoom {
@@ -207,6 +211,10 @@
             border-radius: 10px;
             object-fit: cover;
             transition: transform variables.$transition-duration ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
 }
@@ -263,6 +271,10 @@
             height: 400px;
             object-fit: cover;
             transition: transform variables.$transition-duration ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
 }

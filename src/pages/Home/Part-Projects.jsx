@@ -1,7 +1,7 @@
 import { Fade } from "react-awesome-reveal";
 import CardImage from "../../components/UI/CardImage";
-import ImageProyecto3 from "../../assets/images/proyecto-puertorico.png";
-import ImageProyecto2 from "../../assets/images/proyecto-gmd-2021.jpg";
+import ImageProyecto3 from "../../assets/images/proyecto-puertorico.webp";
+import ImageProyecto2 from "../../assets/images/proyecto-gmd-2021.webp";
 import { useTranslation } from "react-i18next";
 
 // Mapeo de imágenes (porque las imágenes no están en JSON)
