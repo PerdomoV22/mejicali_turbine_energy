@@ -3,9 +3,21 @@ import { MdOutlineEnergySavingsLeaf } from "react-icons/md";
 import { useForm } from "react-hook-form";
 import Logo from "../../assets/images/logo-contact.png";
 import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser"; 
 
 const CardContact = () => {
+
+    // Traduccion de la pagina 
     const { t } = useTranslation();
+    // Campos del formulario con traducción
+    const fields = [
+        { name: "nombre", type: "text" },
+        { name: "telefono", type: "tel" },
+        { name: "correo", type: "email" },
+        { name: "mensaje", type: "textarea" }
+    ];
+
+    // Validacion de los campos del formulario con React hook y funcionalidad con EmailJS
     const {
         register,
         handleSubmit,
@@ -15,17 +27,32 @@ const CardContact = () => {
     
     const onSubmit = (data) => {
         console.log("Formulario enviado:", data);
-        alert(t("contact.form.submit") + " correctamente");
-        reset();
+    
+        // Enviar el formulario con EmailJS
+        emailjs
+            .send(
+                "service_4zogfv5", // Reemplazar con el SERVICE ID de la empresa
+                "template_h4doiyo", // Reemplaza con el TEMPLATE ID de la empresa
+                {
+                    nombre: data.nombre,
+                    telefono: data.telefono,
+                    correo: data.correo,
+                    mensaje: data.mensaje,
+                },
+                "lh8Xkh3wPAj4DL9ww" // Reemplaza con el PUBLIC KEY de la empresa
+            )
+            .then(
+                (response) => {
+                    console.log("Correo enviado con éxito!", response);
+                    alert(t("contact.form.alert"));
+                    reset();
+                },
+                (error) => {
+                    console.error("Error al enviar el mensaje:", error);
+                    alert(t("contact.form.alertError"));
+                }
+            );
     };
-
-    // Campos del formulario con traducción
-    const fields = [
-        { name: "nombre", type: "text" },
-        { name: "telefono", type: "tel" },
-        { name: "correo", type: "email" },
-        { name: "mensaje", type: "textarea" }
-    ];
 
     return (
         <div className="mt-5 contacto-container">
@@ -48,7 +75,11 @@ const CardContact = () => {
                             {fields.slice(0, 2).map(({ name, type }) => (
                                 <div className="col-md-6 mb-3" key={name}>
                                     <label className="form-label">{t(`contact.form.fields.${name}.label`)}</label>
-                                    <input className="form-control" type={type} {...register(name, { required: t(`contact.form.fields.${name}.error`) })} />
+                                    <input
+                                        className="form-control"
+                                        type={type}
+                                        {...register(name, { required: t(`contact.form.fields.${name}.error`) })}
+                                    />
                                     {errors[name] && <p className="text-danger">{errors[name].message}</p>}
                                 </div>
                             ))}
@@ -58,14 +89,22 @@ const CardContact = () => {
                             <div className="mb-3" key={name}>
                                 <label className="form-label">{t(`contact.form.fields.${name}.label`)}</label>
                                 {type === "textarea" ? (
-                                    <textarea className="form-control" rows="3" {...register(name, { required: t(`contact.form.fields.${name}.error`) })}></textarea>
+                                    <textarea
+                                        className="form-control"
+                                        rows="3"
+                                        {...register(name, { required: t(`contact.form.fields.${name}.error`) })}
+                                    ></textarea>
                                 ) : (
-                                    <input className="form-control" type={type} {...register(name, { required: t(`contact.form.fields.${name}.error`) })} />
+                                    <input
+                                        className="form-control"
+                                        type={type}
+                                        {...register(name, { required: t(`contact.form.fields.${name}.error`) })}
+                                    />
                                 )}
                                 {errors[name] && <p className="text-danger">{errors[name].message}</p>}
                             </div>
                         ))}
-                        
+
                         <button type="submit" className="btn btn-primary w-100">
                             {t("contact.form.submit")}
                         </button>
@@ -77,8 +116,6 @@ const CardContact = () => {
 };
 
 export const Contact = () => {
-
-    // Traduccion de la pagina
     const { t } = useTranslation();
 
     return (
@@ -88,12 +125,13 @@ export const Contact = () => {
                 <hr />
                 <p className="text-servicies m-text">{t("contact.description")}</p>
                 <p className="m-text m-sub">
-                    <FaLightbulb className="icon-contac"/> {t("contact.cta")} <MdOutlineEnergySavingsLeaf className="icon-contac" color="green"/>
+                    <FaLightbulb className="icon-contac" /> {t("contact.cta")}{" "}
+                    <MdOutlineEnergySavingsLeaf className="icon-contac" color="green" />
                 </p>
             </div>
             <CardContact />
         </section>
     );
 };
-
-export default Contact;
+    
+    export default Contact;

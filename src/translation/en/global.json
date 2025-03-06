@@ -154,7 +154,9 @@
             "correo": { "label": "Email", "error": "Email is required" },
             "mensaje": { "label": "Message", "error": "Message is required" }
             },
-            "submit": "Send"
+            "submit": "Send",
+            "alert": "Your message has been sent successfully",
+            "alertError": "There was an error sending the message. Please try again."
         },
         "contactInfo": {
             "title": "Contact us:",

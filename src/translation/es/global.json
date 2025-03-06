@@ -154,7 +154,9 @@
             "correo": { "label": "Correo", "error": "El correo es obligatorio" },
             "mensaje": { "label": "Mensaje", "error": "El comentario es obligatorio" }
             },
-            "submit": "Enviar"
+            "submit": "Enviar", 
+            "alert": "Su mensaje se ha enviado correctamente", 
+            "alertError": "Hubo un error al enviar el mensaje. Inténtalo de nuevo."
         },
         "contactInfo": {
             "title": "Contáctanos:",
