@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 // Mapeo de imágenes (porque las imágenes no están en JSON)
 const projectImages = {
-    "Proyecto GMD 2021": ImageProyecto2,
+    "Proyecto GDM 2021": ImageProyecto2,
     "Proyecto Puerto Rico": ImageProyecto3,
     "GMD 2021 Project": ImageProyecto2,
     "Puerto Rico Project": ImageProyecto3

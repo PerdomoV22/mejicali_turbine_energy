@@ -4,7 +4,7 @@ import HeroSection from '../../components/UI/HeroSection';
 import Principles from './Principales';
 import InfoSection from './InfoSection';
 import { useTranslation } from "react-i18next";
-import Seo from '../../components/seo/seo';
+import Seo from '../../components/seo/Seo';
 
 const About = () => {
 

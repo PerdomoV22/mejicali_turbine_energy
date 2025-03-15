@@ -1,7 +1,7 @@
 import { FaLightbulb } from "react-icons/fa";
 import { MdOutlineEnergySavingsLeaf } from "react-icons/md";
 import { useForm } from "react-hook-form";
-import Logo from "../../assets/images/logo-contact.png";
+import Logo from "../../assets/images/logo-Contact.png";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser"; 
 
@@ -31,15 +31,15 @@ const CardContact = () => {
         // Enviar el formulario con EmailJS
         emailjs
             .send(
-                "service_4zogfv5", // Reemplazar con el SERVICE ID de la empresa
-                "template_h4doiyo", // Reemplaza con el TEMPLATE ID de la empresa
+                "service_q2pd06p", // Reemplazar con el SERVICE ID de la empresa
+                "template_0qn0odg", // Reemplaza con el TEMPLATE ID de la empresa
                 {
                     nombre: data.nombre,
                     telefono: data.telefono,
                     correo: data.correo,
                     mensaje: data.mensaje,
                 },
-                "lh8Xkh3wPAj4DL9ww" // Reemplaza con el PUBLIC KEY de la empresa
+                "-UrzpY75y3-wha2L9" // Reemplaza con el PUBLIC KEY de la empresa
             )
             .then(
                 (response) => {

@@ -12,7 +12,7 @@ import { FaCog, FaPlug, FaTint, FaBatteryFull, FaNetworkWired } from "react-icon
 import ProjectScope from "./PanelProjectScope";
 import ProjectDetails from "./PanelProjectDetails";
 import { useTranslation } from "react-i18next";
-import Seo from "../../../components/seo/seo";
+import Seo from "../../../components/seo/Seo";
 import PanelCarouselVideo from "./PanelCarouselVideo";
 import videoSrc from "../../../assets/videos/carousel-pjt2-video.mp4";
 import item1Carousel from "../../../assets/images/carousel-pjt2-item1.webp";

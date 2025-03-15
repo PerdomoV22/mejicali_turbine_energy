@@ -8,7 +8,7 @@ import imagecollage3 from '../../../assets/images/imageCollage3-proyecto1.webp';
 import PanelInfoProjects from "./PanelInfoProjects";
 import { FaTools, FaFileContract, FaBolt, FaClock, FaLeaf } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import Seo from "../../../components/seo/seo";
+import Seo from "../../../components/seo/Seo";
 import PanelCarouselVideo from "./PanelCarouselVideo";
 import videoSrc from "../../../assets/videos/carousel-pjt1-video.mp4";
 import item1Carousel from "../../../assets/images/carousel-pjt-item1.webp";

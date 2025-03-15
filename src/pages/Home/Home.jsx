@@ -3,7 +3,7 @@ import Cards from "./Cards";
 import PartProjects from "./Part-Projects";
 import { Contact } from "./Contact";
 import PartServices from "./Part-Servicies";
-import Seo from "../../components/seo/seo";
+import Seo from "../../components/seo/Seo";
 import { useTranslation } from "react-i18next";
 
 

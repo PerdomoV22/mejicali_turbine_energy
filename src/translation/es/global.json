@@ -4,8 +4,8 @@
         "services": "Servicios",
         "projects": "Proyectos",
         "contact": "Contáctanos",
-        "project1": "Proyecto GMD 2022",
-        "project2": "Proyecto GMD 2021",
+        "project1": "Proyecto GDM 2022",
+        "project2": "Proyecto GDM 2021",
         "project3": "Proyecto Palo Seco",
         "project4": "Proyecto S.E. Movil Tula"
     },
@@ -30,8 +30,8 @@
         {
             "title": "Proyectos",
             "links": [
-                { "text": "Proyecto GMD 2022", "path": "/proyectos" },
-                { "text": "Proyecto GMD 2021", "path": "/proyectos/proyecto2" },
+                { "text": "Proyecto GDM 2022", "path": "/proyectos" },
+                { "text": "Proyecto GDM 2021", "path": "/proyectos/proyecto2" },
                 { "text": "Proyecto Palo Seco", "path": "/proyectos/proyecto3" },
                 { "text": "Proyecto S.E. Movil Tula", "path": "/proyectos/proyecto4" }
             ]
@@ -130,7 +130,7 @@
             {
                 "id": 1,
                 "to": "/proyectos/proyecto2",
-                "alt": "Proyecto GMD 2021",
+                "alt": "Proyecto GDM 2021",
                 "description": "Energía confiable en tiempo récord con tecnología avanzada."
             },
             {
@@ -160,8 +160,8 @@
         },
         "contactInfo": {
             "title": "Contáctanos:",
-            "email": "Correo: info@cominio.com",
-            "phone": "Llámanos: +34 608 18 04 98",
+            "email": "Correo: contacto@mejicaliturbine.com",
+            "phone": "Llámanos: +57 3105223603",
             "address": "Dirección"
         }
     },
@@ -311,7 +311,7 @@
     }, 
 
     "project1": {
-        "heroTitle": "Proyecto GMD 2022",
+        "heroTitle": "Proyecto GDM 2022",
         "heroDescription": "Desde 2021, nuestra misión es transformar la forma en que se suministra energía en el mundo. Con tecnología de vanguardia y soluciones rápidas, ayudamos a empresas a garantizar una estabilidad energética.",
         "introTitle": "Superando Expectativas en la Generación de Energía",
         "introDescription": "En Mejicali Turbine Energy, nos enorgullece anunciar el exitoso cumplimiento de todos los requerimientos técnicos, regulatorios y operativos establecidos para la Puesta en Servicio de la Unidad de Protocolo Correctivo 2022 – Generación Mejicali",
@@ -351,7 +351,7 @@
     }, 
 
     "project2": {
-        "title": "Proyecto GMD 2021",
+        "title": "Proyecto GDM 2021",
         "description": "Desde 2021, nuestra misión es transformar la forma en que se suministra energía en el mundo. Con tecnología de vanguardia y soluciones rápidas, ayudamos a empresas a garantizar una estabilidad energética.", 
         "intro": {
             "title": "Proyecto GDM para CENACE",
@@ -484,11 +484,11 @@
             "description": ""
         },
         "project1": {
-            "title": "Proyecto GMD 2022",
+            "title": "Proyecto GDM 2022",
             "description": ""
         },
         "project2": {
-            "title": "Proyecto GMD 2021",
+            "title": "Proyecto GDM 2021",
             "description": ""
         },
         "project3": {
@@ -502,14 +502,14 @@
     },
 
     "alt-image.project1": {
-        "alt-img1": "Proyecto GMD 2022, maquinaria de energia",
-        "alt-img2": "Proyecto GMD 2022, cajon de energya",
-        "alt-img3": "Proyecto GMD 2022, tuberias de energia"
+        "alt-img1": "Proyecto GDM 2022, maquinaria de energia",
+        "alt-img2": "Proyecto GDM 2022, cajon de energya",
+        "alt-img3": "Proyecto GDM 2022, tuberias de energia"
     },
 
     "alt-image.project2": {
-        "alt-img1": "Proyecto GMD 2021, maquinaria de energia",
-        "alt-img2": "Proyecto GMD 2021, cajon de energya",
-        "alt-img3": "Proyecto GMD 2021, tuberias de energia"
+        "alt-img1": "Proyecto GDM 2021, maquinaria de energia",
+        "alt-img2": "Proyecto GDM 2021, cajon de energya",
+        "alt-img3": "Proyecto GDM 2021, tuberias de energia"
     }
 }

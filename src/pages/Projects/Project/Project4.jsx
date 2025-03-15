@@ -8,7 +8,7 @@ import imagecollage3 from '../../../assets/images/imageCollage3-proyecto4.webp';
 import imageScope from '../../../assets/images/imageScope-proyecto4.webp';
 import ProjectScope from "./PanelProjectScope";
 import { useTranslation } from "react-i18next";
-import Seo from "../../../components/seo/seo";
+import Seo from "../../../components/seo/Seo";
 
 
 const Project4 = () => {

@@ -4,7 +4,7 @@ import PanelServicies from "./PanelServicies";
 import PanelSolutions from "./PanelSolutions";
 import PanelPjtMedida from "./PanelPjtMedida";
 import { useTranslation } from "react-i18next";
-import Seo from "../../components/seo/seo";
+import Seo from "../../components/seo/Seo";
 
 const Services = () => {    
 
