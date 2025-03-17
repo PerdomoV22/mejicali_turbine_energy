@@ -14,17 +14,17 @@
         {
             "title": "About Us",
             "links": [
-                { "text": "Vision", "path": "" },
-                { "text": "Our Principles", "path": "" },
-                { "text": "What Sets Us Apart?", "path": "" }
+                { "text": "Vision", "path": "/sobre-nosotros" },
+                { "text": "Our Principles", "path": "/sobre-nosotros" },
+                { "text": "What Sets Us Apart?", "path": "/sobre-nosotros" }
             ]
         },
         {
             "title": "Services",
             "links": [
-                { "text": "Fast Energy", "path": "" },
-                { "text": "Electric Power", "path": "" },
-                { "text": "Custom Projects", "path": "" }
+                { "text": "Fast Energy", "path": "/servicios" },
+                { "text": "Electric Power", "path": "/servicios" },
+                { "text": "Custom Projects", "path": "/servicios" }
             ]
         },
         {

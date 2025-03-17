@@ -14,17 +14,17 @@
         {
             "title": "Sobre Nosotros",
             "links": [
-                { "text": "Visión", "path": "" },
-                { "text": "Nuestros Principios", "path": "" },
-                { "text": "¿Qué Nos Distingue?", "path": "" }
+                { "text": "Visión", "path": "/sobre-nosotros" },
+                { "text": "Nuestros Principios", "path": "/sobre-nosotros" },
+                { "text": "¿Qué Nos Distingue?", "path": "/sobre-nosotros" }
             ]
         },
         {
             "title": "Servicios",
             "links": [
-                { "text": "Energía Rápida", "path": "" },
-                { "text": "Energía Eléctrica", "path": "" },
-                { "text": "Proyectos a Medida", "path": "" }
+                { "text": "Energía Rápida", "path": "/servicios" },
+                { "text": "Energía Eléctrica", "path": "/servicios" },
+                { "text": "Proyectos a Medida", "path": "/servicios" }
             ]
         },
         {
