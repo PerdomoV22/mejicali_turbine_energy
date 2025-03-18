@@ -64,7 +64,7 @@ const CardContact = () => {
                     <img src={Logo} alt="Logo MTE" />
                     <span>Mejicali Turbine Energy</span>
                 </div>
-                <p className="contacto-reviews">{t("contact.contactInfo.address")}</p>
+                <address className="contacto-reviews">{t("contact.contactInfo.address")}</address>
             </div>
 
             <div className="row contacto-formulario">
