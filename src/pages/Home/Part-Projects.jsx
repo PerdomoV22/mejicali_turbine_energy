@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 const projectImages = {
     "Proyecto GDM 2021": ImageProyecto2,
     "Proyecto Puerto Rico": ImageProyecto3,
-    "GMD 2021 Project": ImageProyecto2,
+    "GDM 2021 Project": ImageProyecto2,
     "Puerto Rico Project": ImageProyecto3
 };
 
