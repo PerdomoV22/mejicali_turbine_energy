@@ -1,7 +1,7 @@
 import { FaLightbulb } from "react-icons/fa";
 import { MdOutlineEnergySavingsLeaf } from "react-icons/md";
 import { useForm } from "react-hook-form";
-import Logo from "../../assets/images/logo-Contact.png";
+import Logo from "../../assets/images/logo-contact.png";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser"; 
 
